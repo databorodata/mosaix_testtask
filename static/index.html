@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Поиск аналогов позиций</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2330;--mut:#667085;--line:#e4e7ec;--ok:#067647;--okbg:#ecfdf3;
+--warn:#b54708;--warnbg:#fffaeb;--bad:#b42318;--badbg:#fef3f2;--info:#175cd3;--infobg:#eff8ff;--accent:#175cd3}
+*{box-sizing:border-box}body{margin:0;font:15px/1.45 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:980px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:21px;margin:6px 0 2px}.sub{color:var(--mut);font-size:13px;margin-bottom:14px}
+.tabs{display:flex;gap:8px;margin:10px 0 16px}
+.tab{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;font-size:14px}
+.tab.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.panel{display:none}.panel.on{display:block}
+.bar{display:flex;gap:8px}
+input[type=text]{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px;background:#fff}
+button.go{padding:10px 18px;border:0;border-radius:8px;background:var(--accent);color:#fff;font-size:15px;cursor:pointer}
+.examples{margin:10px 0 4px;display:flex;flex-wrap:wrap;gap:6px}
+.ex{font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;color:var(--mut)}
+.ex:hover{color:var(--ink)}
+.opts{font-size:13px;color:var(--mut);margin:8px 0}
+.parsed{font-size:13px;color:var(--mut);margin:10px 0 4px}
+.parsed b{color:var(--ink);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+.row1{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.name{font-weight:600}.price{color:var(--mut);white-space:nowrap}.score{margin-left:auto;color:var(--mut);font-size:13px;white-space:nowrap}
+.badge{font-size:12px;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.b-same{background:var(--okbg);color:var(--ok)}.b-sub{background:var(--infobg);color:var(--info)}
+.b-sim{background:#f2f4f7;color:#475467}.b-diff{background:var(--warnbg);color:var(--warn)}.b-conf{background:#0b7a4b;color:#fff}
+.attrs{margin:8px 0 2px;font-size:13.5px}
+.attrs div{margin:1px 0}.m{color:var(--ok)}.d{color:var(--bad)}.n{color:var(--mut)}
+.why{font-size:12.5px;color:var(--mut);margin-top:6px}
+.fb{margin-top:8px;display:flex;gap:6px}
+.fb button{font-size:12.5px;padding:4px 10px;border:1px solid var(--line);border-radius:7px;background:#fff;cursor:pointer}
+.fb button:hover{border-color:var(--accent);color:var(--accent)}
+.nf{background:var(--badbg);border:1px solid #fecdca;color:var(--bad);border-radius:10px;padding:12px 14px;margin:12px 0}
+.nf .hint{color:var(--ink);margin-top:8px;font-size:14px}
+details{margin:10px 0;color:var(--mut)}summary{cursor:pointer;font-size:13.5px}
+.note{font-size:12.5px;color:var(--mut)}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13.5px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:#f9fafb;font-weight:600}
+.load{color:var(--mut);margin:14px 0}
+@media (prefers-color-scheme:dark){:root{--bg:#101828;--card:#182230;--ink:#eaecf0;--mut:#98a2b3;--line:#333f53;
+--okbg:#053321;--infobg:#102a56;--warnbg:#4e1d09;--badbg:#55160c}
+input[type=text],.tab,.ex,.fb button{background:#182230;color:var(--ink)} th{background:#1d2939}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Поиск аналогов позиций</h1>
+  <div class="sub">База: 2 381 строка истории закупок. Поиск отвечает до пяти позиций или честно говорит «не найдено».</div>
+  <div class="tabs">
+    <div class="tab on" data-p="search">Поиск</div>
+    <div class="tab" data-p="sheet">Проверка ведомости</div>
+  </div>
+
+  <div class="panel on" id="p-search">
+    <div class="bar">
+      <input id="q" type="text" placeholder="Наименование позиции своими словами, например: кабель КВВГнг-LS 7*1.5" autofocus>
+      <button class="go" onclick="go()">Найти</button>
+    </div>
+    <div class="examples" id="examples"></div>
+    <div class="opts"><label><input id="fast" type="checkbox"> быстрый режим (без сверяющей модели, точность ниже)</label></div>
+    <div id="out"></div>
+  </div>
+
+  <div class="panel" id="p-sheet">
+    <div class="card">
+      <b>Проверка ведомости файлом</b> — дополнение сверх задания.
+      <div class="note" style="margin:6px 0 10px">Загрузите .xlsx или .csv: колонка с наименованиями находится по заголовку
+      («наименование», «позиция») или как самая текстовая. По каждой строке — статус и ближайшая позиция базы.
+      Единиц измерения в базе закупок нет, сравнение идёт по наименованию.</div>
+      <input type="file" id="file" accept=".xlsx,.csv">
+      <label class="note"><input type="checkbox" id="sheetfast" checked> быстрый режим</label>
+      <button class="go" style="margin-left:8px" onclick="sheet()">Проверить</button>
+    </div>
+    <div id="sout"></div>
+  </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab,.panel').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on');$('#p-'+t.dataset.p).classList.add('on');});
+fetch('/api/examples').then(r=>r.json()).then(xs=>{
+  $('#examples').innerHTML=xs.map(x=>`<span class="ex" onclick="$('#q').value=this.textContent;go()">${x}</span>`).join('');});
+$('#q').addEventListener('keydown',e=>{if(e.key==='Enter')go()});
+
+const BADGE={"та же позиция":"b-same","допустимая замена":"b-sub","похожая":"b-sim","с отличием":"b-diff"};
+function esc(s){return (s??'').toString().replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function price(p){return p==null?'':(typeof p==='number'?p.toLocaleString('ru-RU')+' ₽':esc(p))}
+
+function hitCard(h,q){
+  const v=h.verdict==='same'||h.verdict==='substitute';
+  return `<div class="card">
+    <div class="row1">
+      <span class="badge ${BADGE[h.status]||'b-sim'}">${esc(h.status)}</span>
+      ${v?'<span class="badge b-conf">подтверждено специалистом ранее</span>':''}
+      <span class="name">#${h.row} ${esc(h.name)}</span>
+      <span class="price">${price(h.price)}</span>
+      <span class="score">оценка ${h.score.toFixed(2)}</span>
+    </div>
+    <div class="attrs">
+      ${h.matched.map(x=>`<div class="m">✓ ${esc(x)}</div>`).join('')}
+      ${h.differs.map(x=>`<div class="d">✗ ${esc(x)}</div>`).join('')}
+      ${h.missing.map(x=>`<div class="n">· не указано: ${esc(x)}</div>`).join('')}
+      ${h.notes.map(x=>`<div class="n">· ${esc(x)}</div>`).join('')}
+    </div>
+    ${h.why&&h.why.length?`<div class="why">Из чего сложилась оценка: ${h.why.map(esc).join('; ')}</div>`:''}
+    <div class="fb">
+      <button onclick="fb('${encodeURIComponent(q)}',${h.row},'same',this)">✓ та же позиция</button>
+      <button onclick="fb('${encodeURIComponent(q)}',${h.row},'substitute',this)">≈ допустимая замена</button>
+      <button onclick="fb('${encodeURIComponent(q)}',${h.row},'reject',this)">✗ не подходит</button>
+    </div>
+  </div>`;}
+
+async function go(){
+  const q=$('#q').value.trim(); if(!q)return;
+  $('#out').innerHTML='<div class="load">Ищу…</div>';
+  const r=await fetch(`/api/search?q=${encodeURIComponent(q)}&fast=${$('#fast').checked}`);
+  const d=await r.json();
+  let html='';
+  const p=d.parsed, attrs=Object.entries(p.attrs).map(([k,v])=>`${k}: <b>${esc(v)}</b>`).join(' · ');
+  html+=`<div class="parsed">Разобрано из запроса — вид: <b>${esc(p.kind)}</b>${p.codes.length?` · марка: <b>${p.codes.map(esc).join(', ')}</b>`:''}${attrs?' · '+attrs:''} <span class="note">· режим: ${d.mode}</span></div>`;
+  if(!d.found){
+    html+=`<div class="nf"><b>Не найдено.</b> ${esc(d.reason)}.
+      ${d.hint&&d.hint.length?`<div class="hint">В закупках не встречалось. Ближайшее в справочнике КСР:<br>${d.hint.map(x=>`• ${esc(x.name)} <span class="note">(${esc(x.code)})</span>`).join('<br>')}</div>`:''}</div>`;
+    if(d.rejected.length){html+=`<details><summary>Ближайшие кандидаты и почему они не подошли</summary>${d.rejected.map(h=>`<div class="card"><div class="row1"><span class="badge b-diff">${esc(h.status)}</span><span class="name">#${h.row} ${esc(h.name)}</span></div><div class="attrs">${h.differs.map(x=>`<div class="d">✗ ${esc(x)}</div>`).join('')}${h.notes.map(x=>`<div class="n">· ${esc(x)}</div>`).join('')}</div></div>`).join('')}</details>`;}
+  } else {
+    html+=d.hits.map(h=>hitCard(h,q)).join('');
+    if(d.hidden.length) html+=`<details><summary>Скрыто по отметке «не подходит»: ${d.hidden.length}</summary>${d.hidden.map(h=>hitCard(h,q)).join('')}</details>`;
+  }
+  $('#out').innerHTML=html;
+}
+
+async function fb(q,row,verdict,btn){
+  await fetch('/api/feedback',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({query:decodeURIComponent(q),row,verdict})});
+  btn.textContent='✓ записано'; btn.disabled=true;
+}
+
+async function sheet(){
+  const f=$('#file').files[0]; if(!f){alert('Выберите файл');return}
+  $('#sout').innerHTML='<div class="load">Проверяю строки… (быстрый режим ~0,1 с на строку, основной ~1 с)</div>';
+  const fd=new FormData(); fd.append('file',f);
+  const r=await fetch(`/api/sheet?fast=${$('#sheetfast').checked}`,{method:'POST',body:fd});
+  const d=await r.json();
+  let rows=d.rows.map(x=>{
+    const t=x.top;
+    return `<tr><td>${x.n}</td><td>${esc(x.name)}</td>
+      <td><span class="badge ${BADGE[x.status]||(x.status==='не найдено'?'b-diff':'b-sim')}">${esc(x.status)}</span></td>
+      <td>${t?`#${t.row} ${esc(t.name)}`:(x.hint&&x.hint.length?`<span class="note">КСР: ${esc(x.hint[0].name)}</span>`:'')}</td>
+      <td>${t?price(t.price):''}</td><td>${t?t.score.toFixed(2):''}</td></tr>`;}).join('');
+  $('#sout').innerHTML=`<div class="card"><b>Готово:</b> строк ${d.total}, найдено ${d.found}.
+    <a href="/api/sheet/download/${d.token}">Скачать результат (.xlsx)</a></div>
+    <table><tr><th>№</th><th>Строка ведомости</th><th>Статус</th><th>Найдено в базе</th><th>Цена</th><th>Оценка</th></tr>${rows}</table>`;
+}
+</script>
+</body>
+</html>

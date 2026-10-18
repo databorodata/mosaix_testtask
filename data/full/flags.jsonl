@@ -1,0 +1,2381 @@
+{"n": 1, "row": 2, "ntype": "descriptive", "flags": ["CTX_GENERAL", "CARD_ERR"]}
+{"n": 2, "row": 3, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 3, "row": 4, "ntype": "service", "flags": []}
+{"n": 4, "row": 5, "ntype": "typical", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 5, "row": 6, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 6, "row": 7, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 7, "row": 8, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK"]}
+{"n": 8, "row": 9, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 9, "row": 10, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 10, "row": 11, "ntype": "gost", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 11, "row": 12, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 12, "row": 13, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 13, "row": 14, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 14, "row": 15, "ntype": "article", "flags": []}
+{"n": 15, "row": 16, "ntype": "gost", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 16, "row": 17, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 17, "row": 18, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 18, "row": 19, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 19, "row": 20, "ntype": "article", "flags": []}
+{"n": 20, "row": 21, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF", "KSR_NONE"]}
+{"n": 21, "row": 22, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 22, "row": 23, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 23, "row": 24, "ntype": "kit", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 24, "row": 25, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 25, "row": 26, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 26, "row": 27, "ntype": "article", "flags": ["FILLER", "LOW_CONF", "KSR_NONE"]}
+{"n": 27, "row": 28, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 28, "row": 29, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 29, "row": 30, "ntype": "descriptive", "flags": ["VERIFY_FAIL"]}
+{"n": 30, "row": 31, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 31, "row": 32, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 32, "row": 33, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 33, "row": 34, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 34, "row": 35, "ntype": "article", "flags": []}
+{"n": 35, "row": 36, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 36, "row": 37, "ntype": "article", "flags": []}
+{"n": 37, "row": 38, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "FILLER"]}
+{"n": 38, "row": 39, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 39, "row": 40, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 40, "row": 41, "ntype": "descriptive", "flags": []}
+{"n": 41, "row": 42, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 42, "row": 43, "ntype": "descriptive", "flags": []}
+{"n": 43, "row": 44, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 44, "row": 45, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 45, "row": 46, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 46, "row": 47, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 47, "row": 48, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW"]}
+{"n": 48, "row": 49, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 49, "row": 50, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 50, "row": 51, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 51, "row": 52, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 52, "row": 53, "ntype": "article", "flags": ["CTX_GENERAL", "CARD_ERR"]}
+{"n": 53, "row": 54, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 54, "row": 55, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 55, "row": 56, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 56, "row": 57, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 57, "row": 58, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 58, "row": 59, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 59, "row": 60, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 60, "row": 61, "ntype": "gost", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 61, "row": 62, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 62, "row": 63, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 63, "row": 64, "ntype": "article", "flags": []}
+{"n": 64, "row": 65, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 65, "row": 66, "ntype": "article", "flags": []}
+{"n": 66, "row": 67, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 67, "row": 68, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 68, "row": 69, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 69, "row": 70, "ntype": "gost", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 70, "row": 71, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 71, "row": 72, "ntype": "descriptive", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 72, "row": 73, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 73, "row": 74, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 74, "row": 75, "ntype": "article", "flags": []}
+{"n": 75, "row": 76, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 76, "row": 77, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 77, "row": 78, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 78, "row": 79, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK"]}
+{"n": 79, "row": 80, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 80, "row": 81, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 81, "row": 82, "ntype": "article", "flags": []}
+{"n": 82, "row": 83, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 83, "row": 84, "ntype": "descriptive", "flags": []}
+{"n": 84, "row": 85, "ntype": "descriptive", "flags": []}
+{"n": 85, "row": 86, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 86, "row": 87, "ntype": "article", "flags": []}
+{"n": 87, "row": 88, "ntype": "typical", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 88, "row": 89, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 89, "row": 90, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 90, "row": 91, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 91, "row": 92, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 92, "row": 93, "ntype": "descriptive", "flags": []}
+{"n": 93, "row": 94, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 94, "row": 95, "ntype": "article", "flags": []}
+{"n": 95, "row": 96, "ntype": "gost", "flags": []}
+{"n": 96, "row": 97, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 97, "row": 98, "ntype": "kit", "flags": ["CTX_GENERAL", "LOW_CONF", "KSR_NONE"]}
+{"n": 98, "row": 99, "ntype": "kit", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "LOW_CONF"]}
+{"n": 99, "row": 100, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "CARD_ERR"]}
+{"n": 100, "row": 101, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 101, "row": 102, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 102, "row": 103, "ntype": "service", "flags": ["VERIFY_WARN", "SYN_DUP", "SYN_COPY"]}
+{"n": 103, "row": 104, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 104, "row": 105, "ntype": "gost", "flags": []}
+{"n": 105, "row": 106, "ntype": "gost", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 106, "row": 107, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 107, "row": 108, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 108, "row": 109, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 109, "row": 110, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 110, "row": 111, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 111, "row": 112, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 112, "row": 113, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 113, "row": 114, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 114, "row": 115, "ntype": "article", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "FILLER"]}
+{"n": 115, "row": 116, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 116, "row": 117, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 117, "row": 118, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 118, "row": 119, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 119, "row": 120, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 120, "row": 121, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 121, "row": 122, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 122, "row": 123, "ntype": "descriptive", "flags": []}
+{"n": 123, "row": 124, "ntype": "typical", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 124, "row": 125, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 125, "row": 126, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 126, "row": 127, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 127, "row": 128, "ntype": "descriptive", "flags": []}
+{"n": 128, "row": 129, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 129, "row": 130, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 130, "row": 131, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 131, "row": 132, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 132, "row": 133, "ntype": "article", "flags": ["FILLER"]}
+{"n": 133, "row": 134, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 134, "row": 135, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 135, "row": 136, "ntype": "service", "flags": []}
+{"n": 136, "row": 137, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 137, "row": 138, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 138, "row": 139, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 139, "row": 140, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 140, "row": 141, "ntype": "gost", "flags": ["VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 141, "row": 142, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 142, "row": 143, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_DUP", "FILLER"]}
+{"n": 143, "row": 144, "ntype": "descriptive", "flags": []}
+{"n": 144, "row": 145, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 145, "row": 146, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 146, "row": 147, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "KSR_DOWNGRADE"]}
+{"n": 147, "row": 148, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 148, "row": 149, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 149, "row": 150, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 150, "row": 151, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 151, "row": 152, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF"]}
+{"n": 152, "row": 153, "ntype": "gost", "flags": []}
+{"n": 153, "row": 154, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 154, "row": 155, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 155, "row": 156, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 156, "row": 157, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 157, "row": 158, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 158, "row": 159, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 159, "row": 160, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 160, "row": 161, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 161, "row": 162, "ntype": "article", "flags": []}
+{"n": 162, "row": 163, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 163, "row": 164, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 164, "row": 165, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 165, "row": 166, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 166, "row": 167, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 167, "row": 168, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 168, "row": 169, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 169, "row": 170, "ntype": "typical", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 170, "row": 171, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 171, "row": 172, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 172, "row": 173, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 173, "row": 174, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 174, "row": 175, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 175, "row": 176, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 176, "row": 177, "ntype": "gost", "flags": []}
+{"n": 177, "row": 178, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 178, "row": 179, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 179, "row": 180, "ntype": "descriptive", "flags": []}
+{"n": 180, "row": 181, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 181, "row": 182, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_LATIN_NEW"]}
+{"n": 182, "row": 183, "ntype": "service", "flags": []}
+{"n": 183, "row": 184, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "LOW_CONF"]}
+{"n": 184, "row": 185, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "SYN_DUP"]}
+{"n": 185, "row": 186, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 186, "row": 187, "ntype": "gost", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 187, "row": 188, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 188, "row": 189, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 189, "row": 190, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 190, "row": 191, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 191, "row": 192, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 192, "row": 193, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 193, "row": 194, "ntype": "article", "flags": []}
+{"n": 194, "row": 195, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 195, "row": 196, "ntype": "kit", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_WARN", "FILLER", "LOW_CONF", "KSR_NONE"]}
+{"n": 196, "row": 197, "ntype": "descriptive", "flags": []}
+{"n": 197, "row": 198, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 198, "row": 199, "ntype": "article", "flags": []}
+{"n": 199, "row": 200, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "KSR_DOWNGRADE"]}
+{"n": 200, "row": 201, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 201, "row": 202, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 202, "row": 203, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 203, "row": 204, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 204, "row": 205, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK"]}
+{"n": 205, "row": 206, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 206, "row": 207, "ntype": "article", "flags": []}
+{"n": 207, "row": 208, "ntype": "article", "flags": []}
+{"n": 208, "row": 209, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 209, "row": 210, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "FILLER"]}
+{"n": 210, "row": 211, "ntype": "descriptive", "flags": []}
+{"n": 211, "row": 212, "ntype": "gost", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 212, "row": 213, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 213, "row": 214, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 214, "row": 215, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 215, "row": 216, "ntype": "article", "flags": []}
+{"n": 216, "row": 217, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 217, "row": 218, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 218, "row": 219, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 219, "row": 220, "ntype": "descriptive", "flags": []}
+{"n": 220, "row": 221, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 221, "row": 222, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 222, "row": 223, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 223, "row": 224, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 224, "row": 225, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN"]}
+{"n": 225, "row": 226, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 226, "row": 227, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 227, "row": 228, "ntype": "gost", "flags": ["SYN_LATIN_NEW"]}
+{"n": 228, "row": 229, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 229, "row": 230, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 230, "row": 231, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "FILLER", "LOW_CONF"]}
+{"n": 231, "row": 232, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 232, "row": 233, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "FILLER"]}
+{"n": 233, "row": 234, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 234, "row": 235, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 235, "row": 236, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "FILLER"]}
+{"n": 236, "row": 237, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 237, "row": 238, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 238, "row": 239, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 239, "row": 240, "ntype": "gost", "flags": []}
+{"n": 240, "row": 241, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 241, "row": 242, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 242, "row": 243, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 243, "row": 244, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 244, "row": 245, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 245, "row": 246, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 246, "row": 247, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 247, "row": 248, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 248, "row": 249, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 249, "row": 250, "ntype": "descriptive", "flags": []}
+{"n": 250, "row": 251, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 251, "row": 252, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 252, "row": 253, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 253, "row": 254, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 254, "row": 255, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 255, "row": 256, "ntype": "kit", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 256, "row": 257, "ntype": "descriptive", "flags": []}
+{"n": 257, "row": 258, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 258, "row": 259, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 259, "row": 260, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 260, "row": 261, "ntype": "article", "flags": ["FILLER"]}
+{"n": 261, "row": 262, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 262, "row": 263, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 263, "row": 264, "ntype": "article", "flags": []}
+{"n": 264, "row": 265, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 265, "row": 266, "ntype": "article", "flags": []}
+{"n": 266, "row": 267, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 267, "row": 268, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 268, "row": 269, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 269, "row": 270, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 270, "row": 271, "ntype": "descriptive", "flags": []}
+{"n": 271, "row": 272, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 272, "row": 273, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 273, "row": 274, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 274, "row": 275, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 275, "row": 276, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 276, "row": 277, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 277, "row": 278, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 278, "row": 279, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 279, "row": 280, "ntype": "gost", "flags": []}
+{"n": 280, "row": 281, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 281, "row": 282, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 282, "row": 283, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 283, "row": 284, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 284, "row": 285, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 285, "row": 286, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 286, "row": 287, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 287, "row": 288, "ntype": "kit", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_FAIL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 288, "row": 289, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 289, "row": 290, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 290, "row": 291, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 291, "row": 292, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 292, "row": 293, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 293, "row": 294, "ntype": "gost", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 294, "row": 295, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 295, "row": 296, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 296, "row": 297, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 297, "row": 298, "ntype": "service", "flags": []}
+{"n": 298, "row": 299, "ntype": "gost", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 299, "row": 300, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 300, "row": 301, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_COPY", "SYN_LATIN_NEW"]}
+{"n": 301, "row": 302, "ntype": "descriptive", "flags": ["CTX_GENERAL", "LOW_CONF"]}
+{"n": 302, "row": 303, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 303, "row": 304, "ntype": "article", "flags": ["LOW_CONF"]}
+{"n": 304, "row": 305, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 305, "row": 306, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 306, "row": 307, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN", "KSR_DOWNGRADE"]}
+{"n": 307, "row": 308, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 308, "row": 309, "ntype": "article", "flags": []}
+{"n": 309, "row": 310, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 310, "row": 311, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 311, "row": 312, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 312, "row": 313, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 313, "row": 314, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 314, "row": 315, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 315, "row": 316, "ntype": "article", "flags": []}
+{"n": 316, "row": 317, "ntype": "article", "flags": ["FILLER"]}
+{"n": 317, "row": 318, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 318, "row": 319, "ntype": "article", "flags": []}
+{"n": 319, "row": 320, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 320, "row": 321, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 321, "row": 322, "ntype": "article", "flags": []}
+{"n": 322, "row": 323, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 323, "row": 324, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 324, "row": 325, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 325, "row": 326, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER"]}
+{"n": 326, "row": 327, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 327, "row": 328, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 328, "row": 329, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 329, "row": 330, "ntype": "article", "flags": ["LOW_CONF", "KSR_NONE"]}
+{"n": 330, "row": 331, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 331, "row": 332, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 332, "row": 333, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 333, "row": 334, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 334, "row": 335, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 335, "row": 336, "ntype": "article", "flags": []}
+{"n": 336, "row": 337, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_NONE"]}
+{"n": 337, "row": 338, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 338, "row": 339, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 339, "row": 340, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 340, "row": 341, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 341, "row": 342, "ntype": "article", "flags": []}
+{"n": 342, "row": 343, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 343, "row": 344, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 344, "row": 345, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 345, "row": 346, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 346, "row": 347, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 347, "row": 348, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 348, "row": 349, "ntype": "typical", "flags": ["SYN_DUP", "SYN_COPY", "KSR_NONE"]}
+{"n": 349, "row": 350, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 350, "row": 351, "ntype": "article", "flags": ["CTX_GENERAL"]}
+{"n": 351, "row": 352, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 352, "row": 353, "ntype": "typical", "flags": ["NEIGHBOR_DROP"]}
+{"n": 353, "row": 354, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 354, "row": 355, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 355, "row": 356, "ntype": "article", "flags": []}
+{"n": 356, "row": 357, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 357, "row": 358, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 358, "row": 359, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 359, "row": 360, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 360, "row": 361, "ntype": "article", "flags": ["FILLER"]}
+{"n": 361, "row": 362, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 362, "row": 363, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 363, "row": 364, "ntype": "article", "flags": ["FILLER"]}
+{"n": 364, "row": 365, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 365, "row": 366, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 366, "row": 367, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 367, "row": 368, "ntype": "kit", "flags": ["CTX_GENERAL", "MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 368, "row": 369, "ntype": "gost", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 369, "row": 370, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 370, "row": 371, "ntype": "article", "flags": ["SYN_DUP", "SYN_COPY"]}
+{"n": 371, "row": 372, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 372, "row": 373, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 373, "row": 374, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 374, "row": 375, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW"]}
+{"n": 375, "row": 376, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 376, "row": 377, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 377, "row": 378, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 378, "row": 379, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 379, "row": 380, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 380, "row": 381, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 381, "row": 382, "ntype": "typical", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 382, "row": 383, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 383, "row": 384, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 384, "row": 385, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 385, "row": 386, "ntype": "descriptive", "flags": ["VERIFY_FAIL"]}
+{"n": 386, "row": 387, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 387, "row": 388, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 388, "row": 389, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 389, "row": 390, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 390, "row": 391, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 391, "row": 392, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 392, "row": 393, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 393, "row": 394, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER", "LOW_CONF"]}
+{"n": 394, "row": 395, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 395, "row": 396, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 396, "row": 397, "ntype": "descriptive", "flags": ["CARD_ERR"]}
+{"n": 397, "row": 398, "ntype": "article", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 398, "row": 399, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 399, "row": 400, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 400, "row": 401, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 401, "row": 402, "ntype": "article", "flags": []}
+{"n": 402, "row": 403, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 403, "row": 404, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 404, "row": 405, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 405, "row": 406, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 406, "row": 407, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 407, "row": 408, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 408, "row": 409, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "FILLER"]}
+{"n": 409, "row": 410, "ntype": "kit", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 410, "row": 411, "ntype": "article", "flags": []}
+{"n": 411, "row": 412, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 412, "row": 413, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 413, "row": 414, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 414, "row": 415, "ntype": "descriptive", "flags": []}
+{"n": 415, "row": 416, "ntype": "gost", "flags": []}
+{"n": 416, "row": 417, "ntype": "service", "flags": []}
+{"n": 417, "row": 418, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 418, "row": 419, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 419, "row": 420, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 420, "row": 421, "ntype": "article", "flags": ["CTX_NONE", "NEIGHBOR_DROP"]}
+{"n": 421, "row": 422, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 422, "row": 423, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 423, "row": 424, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 424, "row": 425, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 425, "row": 426, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 426, "row": 427, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 427, "row": 428, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 428, "row": 429, "ntype": "article", "flags": []}
+{"n": 429, "row": 430, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 430, "row": 431, "ntype": "typical", "flags": []}
+{"n": 431, "row": 432, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 432, "row": 433, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_NONE"]}
+{"n": 433, "row": 434, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "KSR_NONE"]}
+{"n": 434, "row": 435, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 435, "row": 436, "ntype": "descriptive", "flags": []}
+{"n": 436, "row": 437, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 437, "row": 438, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 438, "row": 439, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "FILLER"]}
+{"n": 439, "row": 440, "ntype": "gost", "flags": ["CTX_GENERAL"]}
+{"n": 440, "row": 441, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 441, "row": 442, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 442, "row": 443, "ntype": "descriptive", "flags": []}
+{"n": 443, "row": 444, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 444, "row": 445, "ntype": "descriptive", "flags": ["VERIFY_WARN", "KSR_NONE"]}
+{"n": 445, "row": 446, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 446, "row": 447, "ntype": "article", "flags": []}
+{"n": 447, "row": 448, "ntype": "descriptive", "flags": []}
+{"n": 448, "row": 449, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 449, "row": 450, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_DUP", "FILLER"]}
+{"n": 450, "row": 451, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 451, "row": 452, "ntype": "gost", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 452, "row": 453, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 453, "row": 454, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 454, "row": 455, "ntype": "gost", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_WARN", "FILLER", "LOW_CONF"]}
+{"n": 455, "row": 456, "ntype": "descriptive", "flags": []}
+{"n": 456, "row": 457, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 457, "row": 458, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 458, "row": 459, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 459, "row": 460, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 460, "row": 461, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 461, "row": 462, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 462, "row": 463, "ntype": "descriptive", "flags": ["CTX_GENERAL", "CARD_ERR"]}
+{"n": 463, "row": 464, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 464, "row": 465, "ntype": "typical", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 465, "row": 466, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 466, "row": 467, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 467, "row": 468, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "LOW_CONF"]}
+{"n": 468, "row": 469, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 469, "row": 470, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 470, "row": 471, "ntype": "descriptive", "flags": []}
+{"n": 471, "row": 472, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 472, "row": 473, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 473, "row": 474, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 474, "row": 475, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 475, "row": 476, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 476, "row": 477, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 477, "row": 478, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 478, "row": 479, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 479, "row": 480, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 480, "row": 481, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 481, "row": 482, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 482, "row": 483, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 483, "row": 484, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 484, "row": 485, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 485, "row": 486, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 486, "row": 487, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP", "KSR_NONE"]}
+{"n": 487, "row": 488, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 488, "row": 489, "ntype": "gost", "flags": ["MANUF_LEAK"]}
+{"n": 489, "row": 490, "ntype": "service", "flags": []}
+{"n": 490, "row": 491, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 491, "row": 492, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 492, "row": 493, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 493, "row": 494, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 494, "row": 495, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 495, "row": 496, "ntype": "service", "flags": []}
+{"n": 496, "row": 497, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 497, "row": 498, "ntype": "article", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_DUP", "LOW_CONF", "KSR_NONE"]}
+{"n": 498, "row": 499, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 499, "row": 500, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 500, "row": 501, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 501, "row": 502, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 502, "row": 503, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 503, "row": 504, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN"]}
+{"n": 504, "row": 505, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 505, "row": 506, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 506, "row": 507, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 507, "row": 508, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 508, "row": 509, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 509, "row": 510, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 510, "row": 511, "ntype": "article", "flags": []}
+{"n": 511, "row": 512, "ntype": "gost", "flags": []}
+{"n": 512, "row": 513, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 513, "row": 514, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 514, "row": 515, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 515, "row": 516, "ntype": "gost", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 516, "row": 517, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 517, "row": 518, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 518, "row": 519, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 519, "row": 520, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 520, "row": 521, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "LOW_CONF"]}
+{"n": 521, "row": 522, "ntype": "article", "flags": ["FILLER"]}
+{"n": 522, "row": 523, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 523, "row": 524, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 524, "row": 525, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 525, "row": 526, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 526, "row": 527, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 527, "row": 528, "ntype": "kit", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "KSR_DOWNGRADE"]}
+{"n": 528, "row": 529, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW"]}
+{"n": 529, "row": 530, "ntype": "article", "flags": ["FILLER"]}
+{"n": 530, "row": 531, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 531, "row": 532, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 532, "row": 533, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_COPY", "KSR_NONE"]}
+{"n": 533, "row": 534, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 534, "row": 535, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 535, "row": 536, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 536, "row": 537, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 537, "row": 538, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 538, "row": 539, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 539, "row": 540, "ntype": "gost", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_WARN"]}
+{"n": 540, "row": 541, "ntype": "gost", "flags": ["VERIFY_WARN"]}
+{"n": 541, "row": 542, "ntype": "descriptive", "flags": []}
+{"n": 542, "row": 543, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 543, "row": 544, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 544, "row": 545, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 545, "row": 546, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 546, "row": 547, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 547, "row": 548, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 548, "row": 549, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 549, "row": 550, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW"]}
+{"n": 550, "row": 551, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 551, "row": 552, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 552, "row": 553, "ntype": "gost", "flags": []}
+{"n": 553, "row": 554, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 554, "row": 555, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 555, "row": 556, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 556, "row": 557, "ntype": "descriptive", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 557, "row": 558, "ntype": "article", "flags": []}
+{"n": 558, "row": 559, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 559, "row": 560, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 560, "row": 561, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 561, "row": 562, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 562, "row": 563, "ntype": "article", "flags": []}
+{"n": 563, "row": 564, "ntype": "article", "flags": []}
+{"n": 564, "row": 565, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 565, "row": 566, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 566, "row": 567, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 567, "row": 568, "ntype": "article", "flags": ["FILLER"]}
+{"n": 568, "row": 569, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 569, "row": 570, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 570, "row": 571, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 571, "row": 572, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 572, "row": 573, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 573, "row": 574, "ntype": "article", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 574, "row": 575, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 575, "row": 576, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 576, "row": 577, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 577, "row": 578, "ntype": "article", "flags": ["FILLER"]}
+{"n": 578, "row": 579, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 579, "row": 580, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 580, "row": 581, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 581, "row": 582, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "LOW_CONF", "KSR_NONE"]}
+{"n": 582, "row": 583, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 583, "row": 584, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 584, "row": 585, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 585, "row": 586, "ntype": "descriptive", "flags": []}
+{"n": 586, "row": 587, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 587, "row": 588, "ntype": "typical", "flags": ["VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 588, "row": 589, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 589, "row": 590, "ntype": "descriptive", "flags": []}
+{"n": 590, "row": 591, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 591, "row": 592, "ntype": "article", "flags": ["CTX_GENERAL"]}
+{"n": 592, "row": 593, "ntype": "service", "flags": []}
+{"n": 593, "row": 594, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 594, "row": 595, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 595, "row": 596, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 596, "row": 597, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 597, "row": 598, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 598, "row": 599, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 599, "row": 600, "ntype": "article", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 600, "row": 601, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW"]}
+{"n": 601, "row": 602, "ntype": "typical", "flags": ["VERIFY_FAIL"]}
+{"n": 602, "row": 603, "ntype": "service", "flags": []}
+{"n": 603, "row": 604, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 604, "row": 605, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 605, "row": 606, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 606, "row": 607, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 607, "row": 608, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 608, "row": 609, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 609, "row": 610, "ntype": "typical", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 610, "row": 611, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 611, "row": 612, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 612, "row": 613, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 613, "row": 614, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN", "KSR_DOWNGRADE"]}
+{"n": 614, "row": 615, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF", "KSR_NONE"]}
+{"n": 615, "row": 616, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 616, "row": 617, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 617, "row": 618, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER"]}
+{"n": 618, "row": 619, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 619, "row": 620, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 620, "row": 621, "ntype": "descriptive", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 621, "row": 622, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 622, "row": 623, "ntype": "gost", "flags": []}
+{"n": 623, "row": 624, "ntype": "service", "flags": []}
+{"n": 624, "row": 625, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 625, "row": 626, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 626, "row": 627, "ntype": "service", "flags": []}
+{"n": 627, "row": 628, "ntype": "service", "flags": []}
+{"n": 628, "row": 629, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 629, "row": 630, "ntype": "article", "flags": []}
+{"n": 630, "row": 631, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 631, "row": 632, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 632, "row": 633, "ntype": "descriptive", "flags": []}
+{"n": 633, "row": 634, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 634, "row": 635, "ntype": "typical", "flags": ["VERIFY_FAIL"]}
+{"n": 635, "row": 636, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 636, "row": 637, "ntype": "service", "flags": ["SYN_DUP"]}
+{"n": 637, "row": 638, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 638, "row": 639, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 639, "row": 640, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 640, "row": 641, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 641, "row": 642, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 642, "row": 643, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 643, "row": 644, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 644, "row": 645, "ntype": "article", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 645, "row": 646, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 646, "row": 647, "ntype": "article", "flags": ["FILLER"]}
+{"n": 647, "row": 648, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 648, "row": 649, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 649, "row": 650, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 650, "row": 651, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 651, "row": 652, "ntype": "article", "flags": ["LOW_CONF", "KSR_DOWNGRADE"]}
+{"n": 652, "row": 653, "ntype": "article", "flags": ["FILLER"]}
+{"n": 653, "row": 654, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 654, "row": 655, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 655, "row": 656, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 656, "row": 657, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 657, "row": 658, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 658, "row": 659, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 659, "row": 660, "ntype": "gost", "flags": []}
+{"n": 660, "row": 661, "ntype": "descriptive", "flags": []}
+{"n": 661, "row": 662, "ntype": "article", "flags": []}
+{"n": 662, "row": 663, "ntype": "article", "flags": ["FILLER"]}
+{"n": 663, "row": 664, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 664, "row": 665, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 665, "row": 666, "ntype": "kit", "flags": ["KSR_DOWNGRADE"]}
+{"n": 666, "row": 667, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 667, "row": 668, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 668, "row": 669, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 669, "row": 670, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 670, "row": 671, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 671, "row": 672, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 672, "row": 673, "ntype": "service", "flags": []}
+{"n": 673, "row": 674, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 674, "row": 675, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 675, "row": 676, "ntype": "gost", "flags": []}
+{"n": 676, "row": 677, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 677, "row": 678, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 678, "row": 679, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 679, "row": 680, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 680, "row": 681, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 681, "row": 682, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 682, "row": 683, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 683, "row": 684, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 684, "row": 685, "ntype": "article", "flags": []}
+{"n": 685, "row": 686, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 686, "row": 687, "ntype": "kit", "flags": ["SYN_DUP"]}
+{"n": 687, "row": 688, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 688, "row": 689, "ntype": "article", "flags": ["FILLER"]}
+{"n": 689, "row": 690, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 690, "row": 691, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 691, "row": 692, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 692, "row": 693, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 693, "row": 694, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 694, "row": 695, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 695, "row": 696, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 696, "row": 697, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 697, "row": 698, "ntype": "article", "flags": []}
+{"n": 698, "row": 699, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 699, "row": 700, "ntype": "gost", "flags": []}
+{"n": 700, "row": 701, "ntype": "descriptive", "flags": []}
+{"n": 701, "row": 702, "ntype": "gost", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 702, "row": 703, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 703, "row": 704, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 704, "row": 705, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 705, "row": 706, "ntype": "article", "flags": []}
+{"n": 706, "row": 707, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 707, "row": 708, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 708, "row": 709, "ntype": "service", "flags": []}
+{"n": 709, "row": 710, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 710, "row": 711, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 711, "row": 712, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 712, "row": 713, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 713, "row": 714, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 714, "row": 715, "ntype": "article", "flags": ["FILLER"]}
+{"n": 715, "row": 716, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 716, "row": 717, "ntype": "article", "flags": []}
+{"n": 717, "row": 718, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 718, "row": 719, "ntype": "descriptive", "flags": []}
+{"n": 719, "row": 720, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 720, "row": 721, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 721, "row": 722, "ntype": "article", "flags": ["FILLER"]}
+{"n": 722, "row": 723, "ntype": "kit", "flags": ["SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 723, "row": 724, "ntype": "typical", "flags": []}
+{"n": 724, "row": 725, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 725, "row": 726, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 726, "row": 727, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 727, "row": 728, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 728, "row": 729, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 729, "row": 730, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 730, "row": 731, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 731, "row": 732, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 732, "row": 733, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 733, "row": 734, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 734, "row": 735, "ntype": "gost", "flags": []}
+{"n": 735, "row": 736, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 736, "row": 737, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 737, "row": 738, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 738, "row": 739, "ntype": "descriptive", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 739, "row": 740, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 740, "row": 741, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 741, "row": 742, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 742, "row": 743, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 743, "row": 744, "ntype": "gost", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 744, "row": 745, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 745, "row": 746, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 746, "row": 747, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 747, "row": 748, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 748, "row": 749, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 749, "row": 750, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 750, "row": 751, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 751, "row": 752, "ntype": "typical", "flags": ["FILLER"]}
+{"n": 752, "row": 753, "ntype": "descriptive", "flags": []}
+{"n": 753, "row": 754, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 754, "row": 755, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 755, "row": 756, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 756, "row": 757, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 757, "row": 758, "ntype": "gost", "flags": []}
+{"n": 758, "row": 759, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 759, "row": 760, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 760, "row": 761, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 761, "row": 762, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 762, "row": 763, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 763, "row": 764, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 764, "row": 765, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 765, "row": 766, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 766, "row": 767, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 767, "row": 768, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 768, "row": 769, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 769, "row": 770, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 770, "row": 771, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 771, "row": 772, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 772, "row": 773, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 773, "row": 774, "ntype": "gost", "flags": []}
+{"n": 774, "row": 775, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 775, "row": 776, "ntype": "descriptive", "flags": []}
+{"n": 776, "row": 777, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 777, "row": 778, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER"]}
+{"n": 778, "row": 779, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 779, "row": 780, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 780, "row": 781, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 781, "row": 782, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 782, "row": 783, "ntype": "kit", "flags": ["CTX_GENERAL", "MANUF_LEAK", "FILLER"]}
+{"n": 783, "row": 784, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "SYN_LATIN_NEW"]}
+{"n": 784, "row": 785, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 785, "row": 786, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 786, "row": 787, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 787, "row": 788, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 788, "row": 789, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 789, "row": 790, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 790, "row": 791, "ntype": "article", "flags": ["FILLER"]}
+{"n": 791, "row": 792, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 792, "row": 793, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 793, "row": 794, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 794, "row": 795, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 795, "row": 796, "ntype": "kit", "flags": []}
+{"n": 796, "row": 797, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 797, "row": 798, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 798, "row": 799, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 799, "row": 800, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 800, "row": 801, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 801, "row": 802, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 802, "row": 803, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 803, "row": 804, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 804, "row": 805, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 805, "row": 806, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 806, "row": 807, "ntype": "article", "flags": ["FILLER"]}
+{"n": 807, "row": 808, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 808, "row": 809, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 809, "row": 810, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 810, "row": 811, "ntype": "service", "flags": []}
+{"n": 811, "row": 812, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 812, "row": 813, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 813, "row": 814, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "FILLER"]}
+{"n": 814, "row": 815, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 815, "row": 816, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 816, "row": 817, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 817, "row": 818, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 818, "row": 819, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 819, "row": 820, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 820, "row": 821, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 821, "row": 822, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 822, "row": 823, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 823, "row": 824, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 824, "row": 825, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 825, "row": 826, "ntype": "article", "flags": []}
+{"n": 826, "row": 827, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 827, "row": 828, "ntype": "descriptive", "flags": ["CTX_GENERAL", "CARD_ERR"]}
+{"n": 828, "row": 829, "ntype": "article", "flags": ["CARD_ERR"]}
+{"n": 829, "row": 830, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 830, "row": 831, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 831, "row": 832, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 832, "row": 833, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 833, "row": 834, "ntype": "service", "flags": []}
+{"n": 834, "row": 835, "ntype": "article", "flags": ["FILLER"]}
+{"n": 835, "row": 836, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_NONE"]}
+{"n": 836, "row": 837, "ntype": "service", "flags": []}
+{"n": 837, "row": 838, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 838, "row": 839, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 839, "row": 840, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 840, "row": 841, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 841, "row": 842, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 842, "row": 843, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 843, "row": 844, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 844, "row": 845, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 845, "row": 846, "ntype": "article", "flags": []}
+{"n": 846, "row": 847, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 847, "row": 848, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 848, "row": 849, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 849, "row": 850, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 850, "row": 851, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 851, "row": 852, "ntype": "gost", "flags": []}
+{"n": 852, "row": 853, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 853, "row": 854, "ntype": "article", "flags": []}
+{"n": 854, "row": 855, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 855, "row": 856, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 856, "row": 857, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_DOWNGRADE"]}
+{"n": 857, "row": 858, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 858, "row": 859, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 859, "row": 860, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 860, "row": 861, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 861, "row": 862, "ntype": "gost", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 862, "row": 863, "ntype": "article", "flags": ["FILLER"]}
+{"n": 863, "row": 864, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 864, "row": 865, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 865, "row": 866, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 866, "row": 867, "ntype": "article", "flags": ["FILLER"]}
+{"n": 867, "row": 868, "ntype": "gost", "flags": ["CTX_GENERAL", "VERIFY_WARN", "KSR_NONE"]}
+{"n": 868, "row": 869, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 869, "row": 870, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 870, "row": 871, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 871, "row": 872, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 872, "row": 873, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN", "KSR_DOWNGRADE"]}
+{"n": 873, "row": 874, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 874, "row": 875, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 875, "row": 876, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 876, "row": 877, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN"]}
+{"n": 877, "row": 878, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 878, "row": 879, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 879, "row": 880, "ntype": "article", "flags": ["FILLER"]}
+{"n": 880, "row": 881, "ntype": "descriptive", "flags": []}
+{"n": 881, "row": 882, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 882, "row": 883, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 883, "row": 884, "ntype": "service", "flags": []}
+{"n": 884, "row": 885, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 885, "row": 886, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 886, "row": 887, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 887, "row": 888, "ntype": "article", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 888, "row": 889, "ntype": "article", "flags": []}
+{"n": 889, "row": 890, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 890, "row": 891, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 891, "row": 892, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 892, "row": 893, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 893, "row": 894, "ntype": "kit", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 894, "row": 895, "ntype": "descriptive", "flags": ["VERIFY_WARN", "FILLER", "KSR_NONE"]}
+{"n": 895, "row": 896, "ntype": "article", "flags": []}
+{"n": 896, "row": 897, "ntype": "descriptive", "flags": []}
+{"n": 897, "row": 898, "ntype": "kit", "flags": ["SYN_DUP"]}
+{"n": 898, "row": 899, "ntype": "article", "flags": []}
+{"n": 899, "row": 900, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 900, "row": 901, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 901, "row": 902, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 902, "row": 903, "ntype": "service", "flags": []}
+{"n": 903, "row": 904, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 904, "row": 905, "ntype": "article", "flags": ["FILLER"]}
+{"n": 905, "row": 906, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 906, "row": 907, "ntype": "gost", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 907, "row": 908, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 908, "row": 909, "ntype": "gost", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 909, "row": 910, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 910, "row": 911, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 911, "row": 912, "ntype": "article", "flags": ["FILLER"]}
+{"n": 912, "row": 913, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 913, "row": 914, "ntype": "descriptive", "flags": ["LOW_CONF", "KSR_DOWNGRADE"]}
+{"n": 914, "row": 915, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 915, "row": 916, "ntype": "gost", "flags": []}
+{"n": 916, "row": 917, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 917, "row": 918, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 918, "row": 919, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 919, "row": 920, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 920, "row": 921, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 921, "row": 922, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 922, "row": 923, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 923, "row": 924, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 924, "row": 925, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 925, "row": 926, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 926, "row": 927, "ntype": "descriptive", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 927, "row": 928, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 928, "row": 929, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 929, "row": 930, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 930, "row": 931, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 931, "row": 932, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 932, "row": 933, "ntype": "article", "flags": []}
+{"n": 933, "row": 934, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 934, "row": 935, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 935, "row": 936, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 936, "row": 937, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 937, "row": 938, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 938, "row": 939, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 939, "row": 940, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 940, "row": 941, "ntype": "descriptive", "flags": []}
+{"n": 941, "row": 942, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 942, "row": 943, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 943, "row": 944, "ntype": "article", "flags": []}
+{"n": 944, "row": 945, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 945, "row": 946, "ntype": "descriptive", "flags": []}
+{"n": 946, "row": 947, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 947, "row": 948, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 948, "row": 949, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 949, "row": 950, "ntype": "typical", "flags": []}
+{"n": 950, "row": 951, "ntype": "descriptive", "flags": []}
+{"n": 951, "row": 952, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 952, "row": 953, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 953, "row": 954, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 954, "row": 955, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 955, "row": 956, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 956, "row": 957, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "SYN_LATIN_NEW"]}
+{"n": 957, "row": 958, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 958, "row": 959, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 959, "row": 960, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 960, "row": 961, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 961, "row": 962, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 962, "row": 963, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 963, "row": 964, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 964, "row": 965, "ntype": "article", "flags": []}
+{"n": 965, "row": 966, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 966, "row": 967, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 967, "row": 968, "ntype": "gost", "flags": ["VERIFY_FAIL"]}
+{"n": 968, "row": 969, "ntype": "article", "flags": ["FILLER"]}
+{"n": 969, "row": 970, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 970, "row": 971, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 971, "row": 972, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER", "LOW_CONF", "KSR_NONE"]}
+{"n": 972, "row": 973, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 973, "row": 974, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 974, "row": 975, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 975, "row": 976, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 976, "row": 977, "ntype": "article", "flags": []}
+{"n": 977, "row": 978, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 978, "row": 979, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 979, "row": 980, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER"]}
+{"n": 980, "row": 981, "ntype": "article", "flags": ["FILLER"]}
+{"n": 981, "row": 982, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 982, "row": 983, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_DOWNGRADE"]}
+{"n": 983, "row": 984, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 984, "row": 985, "ntype": "article", "flags": ["FILLER"]}
+{"n": 985, "row": 986, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 986, "row": 987, "ntype": "article", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 987, "row": 988, "ntype": "article", "flags": []}
+{"n": 988, "row": 989, "ntype": "service", "flags": []}
+{"n": 989, "row": 990, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 990, "row": 991, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 991, "row": 992, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 992, "row": 993, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 993, "row": 994, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 994, "row": 995, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 995, "row": 996, "ntype": "service", "flags": []}
+{"n": 996, "row": 997, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 997, "row": 998, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 998, "row": 999, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 999, "row": 1000, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1000, "row": 1001, "ntype": "article", "flags": []}
+{"n": 1001, "row": 1002, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1002, "row": 1003, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1003, "row": 1004, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1004, "row": 1005, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1005, "row": 1006, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1006, "row": 1007, "ntype": "service", "flags": []}
+{"n": 1007, "row": 1008, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "LOW_CONF"]}
+{"n": 1008, "row": 1009, "ntype": "gost", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 1009, "row": 1010, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 1010, "row": 1011, "ntype": "typical", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1011, "row": 1012, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 1012, "row": 1013, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1013, "row": 1014, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1014, "row": 1015, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1015, "row": 1016, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1016, "row": 1017, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1017, "row": 1018, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1018, "row": 1019, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1019, "row": 1020, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1020, "row": 1021, "ntype": "article", "flags": []}
+{"n": 1021, "row": 1022, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 1022, "row": 1023, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 1023, "row": 1024, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1024, "row": 1025, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1025, "row": 1026, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1026, "row": 1027, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1027, "row": 1028, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1028, "row": 1029, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 1029, "row": 1030, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1030, "row": 1031, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1031, "row": 1032, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1032, "row": 1033, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1033, "row": 1034, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1034, "row": 1035, "ntype": "typical", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1035, "row": 1036, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1036, "row": 1037, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1037, "row": 1038, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1038, "row": 1039, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 1039, "row": 1040, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1040, "row": 1041, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1041, "row": 1042, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1042, "row": 1043, "ntype": "article", "flags": []}
+{"n": 1043, "row": 1044, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1044, "row": 1045, "ntype": "service", "flags": []}
+{"n": 1045, "row": 1046, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1046, "row": 1047, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1047, "row": 1048, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1048, "row": 1049, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1049, "row": 1050, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1050, "row": 1051, "ntype": "service", "flags": ["VERIFY_FAIL"]}
+{"n": 1051, "row": 1052, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1052, "row": 1053, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1053, "row": 1054, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1054, "row": 1055, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 1055, "row": 1056, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1056, "row": 1057, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1057, "row": 1058, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1058, "row": 1059, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 1059, "row": 1060, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1060, "row": 1061, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1061, "row": 1062, "ntype": "descriptive", "flags": []}
+{"n": 1062, "row": 1063, "ntype": "article", "flags": []}
+{"n": 1063, "row": 1064, "ntype": "gost", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1064, "row": 1065, "ntype": "article", "flags": []}
+{"n": 1065, "row": 1066, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1066, "row": 1067, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1067, "row": 1068, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1068, "row": 1069, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1069, "row": 1070, "ntype": "descriptive", "flags": []}
+{"n": 1070, "row": 1071, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1071, "row": 1072, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1072, "row": 1073, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1073, "row": 1074, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1074, "row": 1075, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1075, "row": 1076, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1076, "row": 1077, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1077, "row": 1078, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "FILLER"]}
+{"n": 1078, "row": 1079, "ntype": "service", "flags": []}
+{"n": 1079, "row": 1080, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1080, "row": 1081, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1081, "row": 1082, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1082, "row": 1083, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1083, "row": 1084, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1084, "row": 1085, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 1085, "row": 1086, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1086, "row": 1087, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1087, "row": 1088, "ntype": "article", "flags": []}
+{"n": 1088, "row": 1089, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1089, "row": 1090, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 1090, "row": 1091, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1091, "row": 1092, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1092, "row": 1093, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1093, "row": 1094, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1094, "row": 1095, "ntype": "gost", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1095, "row": 1096, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1096, "row": 1097, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1097, "row": 1098, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1098, "row": 1099, "ntype": "article", "flags": []}
+{"n": 1099, "row": 1100, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1100, "row": 1101, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1101, "row": 1102, "ntype": "kit", "flags": ["MARKET_DOMINANT"]}
+{"n": 1102, "row": 1103, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1103, "row": 1104, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1104, "row": 1105, "ntype": "article", "flags": []}
+{"n": 1105, "row": 1106, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1106, "row": 1107, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1107, "row": 1108, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1108, "row": 1109, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1109, "row": 1110, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1110, "row": 1111, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1111, "row": 1112, "ntype": "typical", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1112, "row": 1113, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 1113, "row": 1114, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1114, "row": 1115, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 1115, "row": 1116, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1116, "row": 1117, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1117, "row": 1118, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1118, "row": 1119, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1119, "row": 1120, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_NONE"]}
+{"n": 1120, "row": 1121, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1121, "row": 1122, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1122, "row": 1123, "ntype": "service", "flags": ["VERIFY_WARN"]}
+{"n": 1123, "row": 1124, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1124, "row": 1125, "ntype": "service", "flags": ["VERIFY_WARN"]}
+{"n": 1125, "row": 1126, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1126, "row": 1127, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1127, "row": 1128, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1128, "row": 1129, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1129, "row": 1130, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1130, "row": 1131, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1131, "row": 1132, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1132, "row": 1133, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1133, "row": 1134, "ntype": "gost", "flags": ["CTX_NONE", "NEIGHBOR_DROP", "FILLER", "LOW_CONF"]}
+{"n": 1134, "row": 1135, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 1135, "row": 1136, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1136, "row": 1137, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1137, "row": 1138, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1138, "row": 1139, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 1139, "row": 1140, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1140, "row": 1141, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1141, "row": 1142, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1142, "row": 1143, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1143, "row": 1144, "ntype": "service", "flags": []}
+{"n": 1144, "row": 1145, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1145, "row": 1146, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1146, "row": 1147, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1147, "row": 1148, "ntype": "kit", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1148, "row": 1149, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1149, "row": 1150, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1150, "row": 1151, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1151, "row": 1152, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN", "SYN_DUP"]}
+{"n": 1152, "row": 1153, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1153, "row": 1154, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1154, "row": 1155, "ntype": "service", "flags": []}
+{"n": 1155, "row": 1156, "ntype": "gost", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1156, "row": 1157, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "LOW_CONF", "KSR_NONE"]}
+{"n": 1157, "row": 1158, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1158, "row": 1159, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1159, "row": 1160, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1160, "row": 1161, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 1161, "row": 1162, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1162, "row": 1163, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1163, "row": 1164, "ntype": "gost", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "MANUF_LEAK", "FILLER"]}
+{"n": 1164, "row": 1165, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1165, "row": 1166, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1166, "row": 1167, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1167, "row": 1168, "ntype": "descriptive", "flags": []}
+{"n": 1168, "row": 1169, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 1169, "row": 1170, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1170, "row": 1171, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1171, "row": 1172, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 1172, "row": 1173, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 1173, "row": 1174, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "FILLER"]}
+{"n": 1174, "row": 1175, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1175, "row": 1176, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1176, "row": 1177, "ntype": "descriptive", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1177, "row": 1178, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1178, "row": 1179, "ntype": "gost", "flags": []}
+{"n": 1179, "row": 1180, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1180, "row": 1181, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1181, "row": 1182, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1182, "row": 1183, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1183, "row": 1184, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1184, "row": 1185, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 1185, "row": 1186, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP", "FILLER"]}
+{"n": 1186, "row": 1187, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 1187, "row": 1188, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1188, "row": 1189, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1189, "row": 1190, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1190, "row": 1191, "ntype": "typical", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1191, "row": 1192, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 1192, "row": 1193, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 1193, "row": 1194, "ntype": "service", "flags": []}
+{"n": 1194, "row": 1195, "ntype": "kit", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1195, "row": 1196, "ntype": "descriptive", "flags": []}
+{"n": 1196, "row": 1197, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1197, "row": 1198, "ntype": "gost", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1198, "row": 1199, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1199, "row": 1200, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1200, "row": 1201, "ntype": "article", "flags": []}
+{"n": 1201, "row": 1202, "ntype": "descriptive", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1202, "row": 1203, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1203, "row": 1204, "ntype": "gost", "flags": ["VERIFY_FAIL"]}
+{"n": 1204, "row": 1205, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1205, "row": 1206, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1206, "row": 1207, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1207, "row": 1208, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1208, "row": 1209, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 1209, "row": 1210, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1210, "row": 1211, "ntype": "article", "flags": []}
+{"n": 1211, "row": 1212, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 1212, "row": 1213, "ntype": "gost", "flags": ["VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 1213, "row": 1214, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1214, "row": 1215, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1215, "row": 1216, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1216, "row": 1217, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1217, "row": 1218, "ntype": "article", "flags": []}
+{"n": 1218, "row": 1219, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1219, "row": 1220, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1220, "row": 1221, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1221, "row": 1222, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1222, "row": 1223, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 1223, "row": 1224, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1224, "row": 1225, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF", "KSR_NONE"]}
+{"n": 1225, "row": 1226, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1226, "row": 1227, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1227, "row": 1228, "ntype": "typical", "flags": []}
+{"n": 1228, "row": 1229, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 1229, "row": 1230, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1230, "row": 1231, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1231, "row": 1232, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1232, "row": 1233, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP", "FILLER"]}
+{"n": 1233, "row": 1234, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1234, "row": 1235, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 1235, "row": 1236, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 1236, "row": 1237, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1237, "row": 1238, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "FILLER", "KSR_NONE"]}
+{"n": 1238, "row": 1239, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 1239, "row": 1240, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1240, "row": 1241, "ntype": "typical", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1241, "row": 1242, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1242, "row": 1243, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1243, "row": 1244, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1244, "row": 1245, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1245, "row": 1246, "ntype": "typical", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1246, "row": 1247, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1247, "row": 1248, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1248, "row": 1249, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1249, "row": 1250, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1250, "row": 1251, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1251, "row": 1252, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1252, "row": 1253, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 1253, "row": 1254, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1254, "row": 1255, "ntype": "typical", "flags": []}
+{"n": 1255, "row": 1256, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1256, "row": 1257, "ntype": "article", "flags": []}
+{"n": 1257, "row": 1258, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1258, "row": 1259, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1259, "row": 1260, "ntype": "article", "flags": []}
+{"n": 1260, "row": 1261, "ntype": "service", "flags": []}
+{"n": 1261, "row": 1262, "ntype": "typical", "flags": ["FILLER"]}
+{"n": 1262, "row": 1263, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1263, "row": 1264, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1264, "row": 1265, "ntype": "typical", "flags": []}
+{"n": 1265, "row": 1266, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "FILLER"]}
+{"n": 1266, "row": 1267, "ntype": "kit", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1267, "row": 1268, "ntype": "descriptive", "flags": ["CTX_GENERAL", "LOW_CONF", "KSR_NONE"]}
+{"n": 1268, "row": 1269, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1269, "row": 1270, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1270, "row": 1271, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1271, "row": 1272, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1272, "row": 1273, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1273, "row": 1274, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1274, "row": 1275, "ntype": "descriptive", "flags": []}
+{"n": 1275, "row": 1276, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1276, "row": 1277, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1277, "row": 1278, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1278, "row": 1279, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1279, "row": 1280, "ntype": "descriptive", "flags": []}
+{"n": 1280, "row": 1281, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1281, "row": 1282, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1282, "row": 1283, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1283, "row": 1284, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1284, "row": 1285, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1285, "row": 1286, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1286, "row": 1287, "ntype": "descriptive", "flags": []}
+{"n": 1287, "row": 1288, "ntype": "descriptive", "flags": []}
+{"n": 1288, "row": 1289, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1289, "row": 1290, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1290, "row": 1291, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "LOW_CONF", "KSR_NONE"]}
+{"n": 1291, "row": 1292, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1292, "row": 1293, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 1293, "row": 1294, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1294, "row": 1295, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1295, "row": 1296, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1296, "row": 1297, "ntype": "descriptive", "flags": []}
+{"n": 1297, "row": 1298, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1298, "row": 1299, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1299, "row": 1300, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1300, "row": 1301, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 1301, "row": 1302, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1302, "row": 1303, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1303, "row": 1304, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1304, "row": 1305, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 1305, "row": 1306, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1306, "row": 1307, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1307, "row": 1308, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1308, "row": 1309, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1309, "row": 1310, "ntype": "gost", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1310, "row": 1311, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1311, "row": 1312, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1312, "row": 1313, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1313, "row": 1314, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1314, "row": 1315, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1315, "row": 1316, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1316, "row": 1317, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_DOWNGRADE"]}
+{"n": 1317, "row": 1318, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1318, "row": 1319, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1319, "row": 1320, "ntype": "typical", "flags": ["VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 1320, "row": 1321, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1321, "row": 1322, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1322, "row": 1323, "ntype": "descriptive", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 1323, "row": 1324, "ntype": "service", "flags": []}
+{"n": 1324, "row": 1325, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 1325, "row": 1326, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 1326, "row": 1327, "ntype": "kit", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 1327, "row": 1328, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1328, "row": 1329, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 1329, "row": 1330, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1330, "row": 1331, "ntype": "descriptive", "flags": []}
+{"n": 1331, "row": 1332, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1332, "row": 1333, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1333, "row": 1334, "ntype": "gost", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1334, "row": 1335, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1335, "row": 1336, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1336, "row": 1337, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN"]}
+{"n": 1337, "row": 1338, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1338, "row": 1339, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1339, "row": 1340, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1340, "row": 1341, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "VERIFY_FAIL", "FILLER"]}
+{"n": 1341, "row": 1342, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1342, "row": 1343, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1343, "row": 1344, "ntype": "gost", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 1344, "row": 1345, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1345, "row": 1346, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1346, "row": 1347, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1347, "row": 1348, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 1348, "row": 1349, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1349, "row": 1350, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 1350, "row": 1351, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1351, "row": 1352, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1352, "row": 1353, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1353, "row": 1354, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW"]}
+{"n": 1354, "row": 1355, "ntype": "gost", "flags": ["CTX_GENERAL", "VERIFY_WARN", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1355, "row": 1356, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 1356, "row": 1357, "ntype": "typical", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1357, "row": 1358, "ntype": "gost", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 1358, "row": 1359, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1359, "row": 1360, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1360, "row": 1361, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1361, "row": 1362, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 1362, "row": 1363, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_ERR"]}
+{"n": 1363, "row": 1364, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1364, "row": 1365, "ntype": "article", "flags": []}
+{"n": 1365, "row": 1366, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1366, "row": 1367, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1367, "row": 1368, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1368, "row": 1369, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 1369, "row": 1370, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 1370, "row": 1371, "ntype": "service", "flags": []}
+{"n": 1371, "row": 1372, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "SYN_LATIN_NEW"]}
+{"n": 1372, "row": 1373, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 1373, "row": 1374, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1374, "row": 1375, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1375, "row": 1376, "ntype": "descriptive", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 1376, "row": 1377, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK"]}
+{"n": 1377, "row": 1378, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 1378, "row": 1379, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1379, "row": 1380, "ntype": "article", "flags": []}
+{"n": 1380, "row": 1381, "ntype": "kit", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1381, "row": 1382, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1382, "row": 1383, "ntype": "descriptive", "flags": []}
+{"n": 1383, "row": 1384, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1384, "row": 1385, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1385, "row": 1386, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1386, "row": 1387, "ntype": "article", "flags": []}
+{"n": 1387, "row": 1388, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1388, "row": 1389, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1389, "row": 1390, "ntype": "gost", "flags": []}
+{"n": 1390, "row": 1391, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1391, "row": 1392, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1392, "row": 1393, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1393, "row": 1394, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1394, "row": 1395, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1395, "row": 1396, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1396, "row": 1397, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1397, "row": 1398, "ntype": "service", "flags": []}
+{"n": 1398, "row": 1399, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1399, "row": 1400, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1400, "row": 1401, "ntype": "article", "flags": []}
+{"n": 1401, "row": 1402, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1402, "row": 1403, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1403, "row": 1404, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1404, "row": 1405, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1405, "row": 1406, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1406, "row": 1407, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1407, "row": 1408, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1408, "row": 1409, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1409, "row": 1410, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1410, "row": 1411, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1411, "row": 1412, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1412, "row": 1413, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1413, "row": 1414, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1414, "row": 1415, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1415, "row": 1416, "ntype": "gost", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1416, "row": 1417, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1417, "row": 1418, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1418, "row": 1419, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1419, "row": 1420, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 1420, "row": 1421, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1421, "row": 1422, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1422, "row": 1423, "ntype": "gost", "flags": []}
+{"n": 1423, "row": 1424, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1424, "row": 1425, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1425, "row": 1426, "ntype": "typical", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1426, "row": 1427, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 1427, "row": 1428, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 1428, "row": 1429, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1429, "row": 1430, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1430, "row": 1431, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 1431, "row": 1432, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1432, "row": 1433, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1433, "row": 1434, "ntype": "descriptive", "flags": []}
+{"n": 1434, "row": 1435, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1435, "row": 1436, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1436, "row": 1437, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 1437, "row": 1438, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1438, "row": 1439, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1439, "row": 1440, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1440, "row": 1441, "ntype": "article", "flags": []}
+{"n": 1441, "row": 1442, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1442, "row": 1443, "ntype": "typical", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1443, "row": 1444, "ntype": "article", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 1444, "row": 1445, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1445, "row": 1446, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1446, "row": 1447, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1447, "row": 1448, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1448, "row": 1449, "ntype": "kit", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1449, "row": 1450, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 1450, "row": 1451, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1451, "row": 1452, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "FILLER"]}
+{"n": 1452, "row": 1453, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1453, "row": 1454, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1454, "row": 1455, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1455, "row": 1456, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1456, "row": 1457, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1457, "row": 1458, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 1458, "row": 1459, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1459, "row": 1460, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1460, "row": 1461, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1461, "row": 1462, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1462, "row": 1463, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 1463, "row": 1464, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1464, "row": 1465, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 1465, "row": 1466, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1466, "row": 1467, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 1467, "row": 1468, "ntype": "descriptive", "flags": []}
+{"n": 1468, "row": 1469, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1469, "row": 1470, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1470, "row": 1471, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1471, "row": 1472, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1472, "row": 1473, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1473, "row": 1474, "ntype": "typical", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1474, "row": 1475, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 1475, "row": 1476, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1476, "row": 1477, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1477, "row": 1478, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 1478, "row": 1479, "ntype": "gost", "flags": []}
+{"n": 1479, "row": 1480, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1480, "row": 1481, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1481, "row": 1482, "ntype": "descriptive", "flags": []}
+{"n": 1482, "row": 1483, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 1483, "row": 1484, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 1484, "row": 1485, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1485, "row": 1486, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1486, "row": 1487, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1487, "row": 1488, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1488, "row": 1489, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1489, "row": 1490, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1490, "row": 1491, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 1491, "row": 1492, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 1492, "row": 1493, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1493, "row": 1494, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 1494, "row": 1495, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1495, "row": 1496, "ntype": "typical", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1496, "row": 1497, "ntype": "article", "flags": []}
+{"n": 1497, "row": 1498, "ntype": "descriptive", "flags": []}
+{"n": 1498, "row": 1499, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1499, "row": 1500, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1500, "row": 1501, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1501, "row": 1502, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_DOWNGRADE"]}
+{"n": 1502, "row": 1503, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1503, "row": 1504, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1504, "row": 1505, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1505, "row": 1506, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1506, "row": 1507, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1507, "row": 1508, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1508, "row": 1509, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 1509, "row": 1510, "ntype": "article", "flags": []}
+{"n": 1510, "row": 1511, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1511, "row": 1512, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1512, "row": 1513, "ntype": "article", "flags": []}
+{"n": 1513, "row": 1514, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1514, "row": 1515, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "FILLER"]}
+{"n": 1515, "row": 1516, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1516, "row": 1517, "ntype": "article", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 1517, "row": 1518, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1518, "row": 1519, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1519, "row": 1520, "ntype": "descriptive", "flags": []}
+{"n": 1520, "row": 1521, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1521, "row": 1522, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 1522, "row": 1523, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1523, "row": 1524, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1524, "row": 1525, "ntype": "service", "flags": []}
+{"n": 1525, "row": 1526, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1526, "row": 1527, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1527, "row": 1528, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_DOWNGRADE"]}
+{"n": 1528, "row": 1529, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1529, "row": 1530, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 1530, "row": 1531, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1531, "row": 1532, "ntype": "article", "flags": []}
+{"n": 1532, "row": 1533, "ntype": "descriptive", "flags": []}
+{"n": 1533, "row": 1534, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1534, "row": 1535, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 1535, "row": 1536, "ntype": "gost", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 1536, "row": 1537, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_DOWNGRADE"]}
+{"n": 1537, "row": 1538, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1538, "row": 1539, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 1539, "row": 1540, "ntype": "typical", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1540, "row": 1541, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1541, "row": 1542, "ntype": "gost", "flags": ["CTX_GENERAL", "MANUF_LEAK", "FILLER"]}
+{"n": 1542, "row": 1543, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "FILLER"]}
+{"n": 1543, "row": 1544, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1544, "row": 1545, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1545, "row": 1546, "ntype": "article", "flags": ["CTX_NONE", "NEIGHBOR_DROP", "SYN_DUP", "FILLER", "LOW_CONF", "KSR_DOWNGRADE"]}
+{"n": 1546, "row": 1547, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1547, "row": 1548, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1548, "row": 1549, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1549, "row": 1550, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1550, "row": 1551, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1551, "row": 1552, "ntype": "kit", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 1552, "row": 1553, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1553, "row": 1554, "ntype": "service", "flags": ["SYN_DUP"]}
+{"n": 1554, "row": 1555, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "FILLER"]}
+{"n": 1555, "row": 1556, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1556, "row": 1557, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1557, "row": 1558, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1558, "row": 1559, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1559, "row": 1560, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "LOW_CONF"]}
+{"n": 1560, "row": 1561, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 1561, "row": 1562, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 1562, "row": 1563, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1563, "row": 1564, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1564, "row": 1565, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1565, "row": 1566, "ntype": "kit", "flags": []}
+{"n": 1566, "row": 1567, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1567, "row": 1568, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1568, "row": 1569, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1569, "row": 1570, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1570, "row": 1571, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 1571, "row": 1572, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1572, "row": 1573, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1573, "row": 1574, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1574, "row": 1575, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1575, "row": 1576, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1576, "row": 1577, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1577, "row": 1578, "ntype": "descriptive", "flags": []}
+{"n": 1578, "row": 1579, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1579, "row": 1580, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1580, "row": 1581, "ntype": "descriptive", "flags": ["CTX_GENERAL", "CARD_ERR"]}
+{"n": 1581, "row": 1582, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1582, "row": 1583, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1583, "row": 1584, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1584, "row": 1585, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1585, "row": 1586, "ntype": "descriptive", "flags": []}
+{"n": 1586, "row": 1587, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1587, "row": 1588, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1588, "row": 1589, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK"]}
+{"n": 1589, "row": 1590, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1590, "row": 1591, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK"]}
+{"n": 1591, "row": 1592, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1592, "row": 1593, "ntype": "article", "flags": []}
+{"n": 1593, "row": 1594, "ntype": "kit", "flags": ["KSR_NONE"]}
+{"n": 1594, "row": 1595, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1595, "row": 1596, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1596, "row": 1597, "ntype": "gost", "flags": ["VERIFY_FAIL"]}
+{"n": 1597, "row": 1598, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1598, "row": 1599, "ntype": "service", "flags": []}
+{"n": 1599, "row": 1600, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "VERIFY_FAIL", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1600, "row": 1601, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1601, "row": 1602, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1602, "row": 1603, "ntype": "service", "flags": []}
+{"n": 1603, "row": 1604, "ntype": "descriptive", "flags": []}
+{"n": 1604, "row": 1605, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1605, "row": 1606, "ntype": "kit", "flags": ["SYN_DUP"]}
+{"n": 1606, "row": 1607, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "SYN_LATIN_NEW"]}
+{"n": 1607, "row": 1608, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1608, "row": 1609, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1609, "row": 1610, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 1610, "row": 1611, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1611, "row": 1612, "ntype": "gost", "flags": []}
+{"n": 1612, "row": 1613, "ntype": "article", "flags": []}
+{"n": 1613, "row": 1614, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1614, "row": 1615, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1615, "row": 1616, "ntype": "article", "flags": []}
+{"n": 1616, "row": 1617, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1617, "row": 1618, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1618, "row": 1619, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1619, "row": 1620, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 1620, "row": 1621, "ntype": "article", "flags": []}
+{"n": 1621, "row": 1622, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1622, "row": 1623, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1623, "row": 1624, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "KSR_DOWNGRADE"]}
+{"n": 1624, "row": 1625, "ntype": "descriptive", "flags": []}
+{"n": 1625, "row": 1626, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1626, "row": 1627, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1627, "row": 1628, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1628, "row": 1629, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1629, "row": 1630, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 1630, "row": 1631, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1631, "row": 1632, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1632, "row": 1633, "ntype": "article", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1633, "row": 1634, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1634, "row": 1635, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 1635, "row": 1636, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1636, "row": 1637, "ntype": "service", "flags": []}
+{"n": 1637, "row": 1638, "ntype": "article", "flags": ["SYN_DUP", "SYN_COPY", "KSR_NONE"]}
+{"n": 1638, "row": 1639, "ntype": "article", "flags": []}
+{"n": 1639, "row": 1640, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1640, "row": 1641, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1641, "row": 1642, "ntype": "descriptive", "flags": []}
+{"n": 1642, "row": 1643, "ntype": "typical", "flags": []}
+{"n": 1643, "row": 1644, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 1644, "row": 1645, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 1645, "row": 1646, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "FILLER"]}
+{"n": 1646, "row": 1647, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 1647, "row": 1648, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1648, "row": 1649, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1649, "row": 1650, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1650, "row": 1651, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1651, "row": 1652, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 1652, "row": 1653, "ntype": "article", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 1653, "row": 1654, "ntype": "gost", "flags": []}
+{"n": 1654, "row": 1655, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "KSR_DOWNGRADE"]}
+{"n": 1655, "row": 1656, "ntype": "kit", "flags": ["CTX_GENERAL", "LOW_CONF"]}
+{"n": 1656, "row": 1657, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_NONE"]}
+{"n": 1657, "row": 1658, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 1658, "row": 1659, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1659, "row": 1660, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1660, "row": 1661, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 1661, "row": 1662, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1662, "row": 1663, "ntype": "article", "flags": []}
+{"n": 1663, "row": 1664, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1664, "row": 1665, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1665, "row": 1666, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1666, "row": 1667, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1667, "row": 1668, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1668, "row": 1669, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1669, "row": 1670, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1670, "row": 1671, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1671, "row": 1672, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1672, "row": 1673, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1673, "row": 1674, "ntype": "article", "flags": []}
+{"n": 1674, "row": 1675, "ntype": "kit", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1675, "row": 1676, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 1676, "row": 1677, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1677, "row": 1678, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1678, "row": 1679, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 1679, "row": 1680, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1680, "row": 1681, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1681, "row": 1682, "ntype": "descriptive", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1682, "row": 1683, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 1683, "row": 1684, "ntype": "typical", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1684, "row": 1685, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1685, "row": 1686, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1686, "row": 1687, "ntype": "descriptive", "flags": []}
+{"n": 1687, "row": 1688, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1688, "row": 1689, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1689, "row": 1690, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN"]}
+{"n": 1690, "row": 1691, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP", "KSR_NONE"]}
+{"n": 1691, "row": 1692, "ntype": "descriptive", "flags": []}
+{"n": 1692, "row": 1693, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1693, "row": 1694, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1694, "row": 1695, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER"]}
+{"n": 1695, "row": 1696, "ntype": "descriptive", "flags": []}
+{"n": 1696, "row": 1697, "ntype": "descriptive", "flags": []}
+{"n": 1697, "row": 1698, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1698, "row": 1699, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 1699, "row": 1700, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 1700, "row": 1701, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1701, "row": 1702, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 1702, "row": 1703, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1703, "row": 1704, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1704, "row": 1705, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1705, "row": 1706, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1706, "row": 1707, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1707, "row": 1708, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 1708, "row": 1709, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1709, "row": 1710, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1710, "row": 1711, "ntype": "article", "flags": []}
+{"n": 1711, "row": 1712, "ntype": "kit", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 1712, "row": 1713, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1713, "row": 1714, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1714, "row": 1715, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1715, "row": 1716, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1716, "row": 1717, "ntype": "gost", "flags": []}
+{"n": 1717, "row": 1718, "ntype": "descriptive", "flags": []}
+{"n": 1718, "row": 1719, "ntype": "descriptive", "flags": ["VERIFY_FAIL"]}
+{"n": 1719, "row": 1720, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1720, "row": 1721, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1721, "row": 1722, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1722, "row": 1723, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1723, "row": 1724, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1724, "row": 1725, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1725, "row": 1726, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1726, "row": 1727, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1727, "row": 1728, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 1728, "row": 1729, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1729, "row": 1730, "ntype": "article", "flags": ["MANUF_LEAK", "KSR_NONE"]}
+{"n": 1730, "row": 1731, "ntype": "typical", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 1731, "row": 1732, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1732, "row": 1733, "ntype": "article", "flags": []}
+{"n": 1733, "row": 1734, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1734, "row": 1735, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1735, "row": 1736, "ntype": "typical", "flags": ["SYN_DUP"]}
+{"n": 1736, "row": 1737, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 1737, "row": 1738, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1738, "row": 1739, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1739, "row": 1740, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1740, "row": 1741, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1741, "row": 1742, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1742, "row": 1743, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1743, "row": 1744, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1744, "row": 1745, "ntype": "descriptive", "flags": []}
+{"n": 1745, "row": 1746, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1746, "row": 1747, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1747, "row": 1748, "ntype": "gost", "flags": ["MARKET_DOMINANT", "VERIFY_WARN"]}
+{"n": 1748, "row": 1749, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1749, "row": 1750, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1750, "row": 1751, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1751, "row": 1752, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1752, "row": 1753, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1753, "row": 1754, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1754, "row": 1755, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1755, "row": 1756, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "LOW_CONF"]}
+{"n": 1756, "row": 1757, "ntype": "kit", "flags": []}
+{"n": 1757, "row": 1758, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 1758, "row": 1759, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1759, "row": 1760, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1760, "row": 1761, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1761, "row": 1762, "ntype": "article", "flags": ["MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 1762, "row": 1763, "ntype": "descriptive", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 1763, "row": 1764, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1764, "row": 1765, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 1765, "row": 1766, "ntype": "gost", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 1766, "row": 1767, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1767, "row": 1768, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN"]}
+{"n": 1768, "row": 1769, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1769, "row": 1770, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_FAIL", "MANUF_LEAK", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1770, "row": 1771, "ntype": "typical", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1771, "row": 1772, "ntype": "descriptive", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 1772, "row": 1773, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1773, "row": 1774, "ntype": "descriptive", "flags": []}
+{"n": 1774, "row": 1775, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1775, "row": 1776, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "LOW_CONF"]}
+{"n": 1776, "row": 1777, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1777, "row": 1778, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1778, "row": 1779, "ntype": "service", "flags": []}
+{"n": 1779, "row": 1780, "ntype": "gost", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 1780, "row": 1781, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1781, "row": 1782, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1782, "row": 1783, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1783, "row": 1784, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1784, "row": 1785, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 1785, "row": 1786, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1786, "row": 1787, "ntype": "gost", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1787, "row": 1788, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 1788, "row": 1789, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1789, "row": 1790, "ntype": "descriptive", "flags": []}
+{"n": 1790, "row": 1791, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1791, "row": 1792, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 1792, "row": 1793, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1793, "row": 1794, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1794, "row": 1795, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 1795, "row": 1796, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1796, "row": 1797, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1797, "row": 1798, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 1798, "row": 1799, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1799, "row": 1800, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1800, "row": 1801, "ntype": "descriptive", "flags": []}
+{"n": 1801, "row": 1802, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1802, "row": 1803, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1803, "row": 1804, "ntype": "service", "flags": []}
+{"n": 1804, "row": 1805, "ntype": "descriptive", "flags": []}
+{"n": 1805, "row": 1806, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1806, "row": 1807, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1807, "row": 1808, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 1808, "row": 1809, "ntype": "descriptive", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1809, "row": 1810, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1810, "row": 1811, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1811, "row": 1812, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER"]}
+{"n": 1812, "row": 1813, "ntype": "kit", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1813, "row": 1814, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1814, "row": 1815, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1815, "row": 1816, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1816, "row": 1817, "ntype": "service", "flags": []}
+{"n": 1817, "row": 1818, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1818, "row": 1819, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1819, "row": 1820, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 1820, "row": 1821, "ntype": "article", "flags": []}
+{"n": 1821, "row": 1822, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1822, "row": 1823, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1823, "row": 1824, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "FILLER"]}
+{"n": 1824, "row": 1825, "ntype": "article", "flags": []}
+{"n": 1825, "row": 1826, "ntype": "kit", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1826, "row": 1827, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1827, "row": 1828, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1828, "row": 1829, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1829, "row": 1830, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1830, "row": 1831, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 1831, "row": 1832, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1832, "row": 1833, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1833, "row": 1834, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1834, "row": 1835, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1835, "row": 1836, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1836, "row": 1837, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1837, "row": 1838, "ntype": "gost", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1838, "row": 1839, "ntype": "service", "flags": ["VERIFY_FAIL"]}
+{"n": 1839, "row": 1840, "ntype": "gost", "flags": ["VERIFY_WARN", "FILLER", "KSR_NONE"]}
+{"n": 1840, "row": 1841, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 1841, "row": 1842, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1842, "row": 1843, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 1843, "row": 1844, "ntype": "descriptive", "flags": []}
+{"n": 1844, "row": 1845, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1845, "row": 1846, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1846, "row": 1847, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1847, "row": 1848, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1848, "row": 1849, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1849, "row": 1850, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1850, "row": 1851, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1851, "row": 1852, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1852, "row": 1853, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1853, "row": 1854, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "FILLER"]}
+{"n": 1854, "row": 1855, "ntype": "descriptive", "flags": []}
+{"n": 1855, "row": 1856, "ntype": "descriptive", "flags": []}
+{"n": 1856, "row": 1857, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_DOWNGRADE"]}
+{"n": 1857, "row": 1858, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1858, "row": 1859, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 1859, "row": 1860, "ntype": "kit", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 1860, "row": 1861, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1861, "row": 1862, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1862, "row": 1863, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1863, "row": 1864, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1864, "row": 1865, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW"]}
+{"n": 1865, "row": 1866, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1866, "row": 1867, "ntype": "descriptive", "flags": []}
+{"n": 1867, "row": 1868, "ntype": "descriptive", "flags": []}
+{"n": 1868, "row": 1869, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1869, "row": 1870, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1870, "row": 1871, "ntype": "article", "flags": []}
+{"n": 1871, "row": 1872, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1872, "row": 1873, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1873, "row": 1874, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1874, "row": 1875, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1875, "row": 1876, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1876, "row": 1877, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 1877, "row": 1878, "ntype": "article", "flags": []}
+{"n": 1878, "row": 1879, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1879, "row": 1880, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP"]}
+{"n": 1880, "row": 1881, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 1881, "row": 1882, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 1882, "row": 1883, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1883, "row": 1884, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "MANUF_LEAK"]}
+{"n": 1884, "row": 1885, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1885, "row": 1886, "ntype": "descriptive", "flags": []}
+{"n": 1886, "row": 1887, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1887, "row": 1888, "ntype": "article", "flags": []}
+{"n": 1888, "row": 1889, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 1889, "row": 1890, "ntype": "article", "flags": ["VERIFY_WARN", "FILLER", "KSR_NONE"]}
+{"n": 1890, "row": 1891, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 1891, "row": 1892, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 1892, "row": 1893, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 1893, "row": 1894, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 1894, "row": 1895, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1895, "row": 1896, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 1896, "row": 1897, "ntype": "gost", "flags": []}
+{"n": 1897, "row": 1898, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1898, "row": 1899, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1899, "row": 1900, "ntype": "descriptive", "flags": []}
+{"n": 1900, "row": 1901, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 1901, "row": 1902, "ntype": "gost", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1902, "row": 1903, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 1903, "row": 1904, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1904, "row": 1905, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 1905, "row": 1906, "ntype": "service", "flags": []}
+{"n": 1906, "row": 1907, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1907, "row": 1908, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 1908, "row": 1909, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 1909, "row": 1910, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "SYN_DUP", "KSR_NONE"]}
+{"n": 1910, "row": 1911, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1911, "row": 1912, "ntype": "typical", "flags": ["NEIGHBOR_DROP"]}
+{"n": 1912, "row": 1913, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1913, "row": 1914, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1914, "row": 1915, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1915, "row": 1916, "ntype": "service", "flags": []}
+{"n": 1916, "row": 1917, "ntype": "gost", "flags": []}
+{"n": 1917, "row": 1918, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 1918, "row": 1919, "ntype": "service", "flags": []}
+{"n": 1919, "row": 1920, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1920, "row": 1921, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 1921, "row": 1922, "ntype": "article", "flags": ["FILLER"]}
+{"n": 1922, "row": 1923, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1923, "row": 1924, "ntype": "gost", "flags": []}
+{"n": 1924, "row": 1925, "ntype": "article", "flags": ["VERIFY_WARN"]}
+{"n": 1925, "row": 1926, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1926, "row": 1927, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1927, "row": 1928, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1928, "row": 1929, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1929, "row": 1930, "ntype": "descriptive", "flags": []}
+{"n": 1930, "row": 1931, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1931, "row": 1932, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "FILLER"]}
+{"n": 1932, "row": 1933, "ntype": "descriptive", "flags": []}
+{"n": 1933, "row": 1934, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1934, "row": 1935, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 1935, "row": 1936, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1936, "row": 1937, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1937, "row": 1938, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1938, "row": 1939, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "FILLER"]}
+{"n": 1939, "row": 1940, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 1940, "row": 1941, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 1941, "row": 1942, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK"]}
+{"n": 1942, "row": 1943, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 1943, "row": 1944, "ntype": "gost", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 1944, "row": 1945, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1945, "row": 1946, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1946, "row": 1947, "ntype": "descriptive", "flags": []}
+{"n": 1947, "row": 1948, "ntype": "gost", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1948, "row": 1949, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1949, "row": 1950, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 1950, "row": 1951, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 1951, "row": 1952, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "LOW_CONF", "KSR_NONE"]}
+{"n": 1952, "row": 1953, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1953, "row": 1954, "ntype": "descriptive", "flags": []}
+{"n": 1954, "row": 1955, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1955, "row": 1956, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1956, "row": 1957, "ntype": "descriptive", "flags": []}
+{"n": 1957, "row": 1958, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1958, "row": 1959, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 1959, "row": 1960, "ntype": "gost", "flags": ["FILLER"]}
+{"n": 1960, "row": 1961, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1961, "row": 1962, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1962, "row": 1963, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 1963, "row": 1964, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 1964, "row": 1965, "ntype": "descriptive", "flags": ["VERIFY_WARN", "KSR_NONE"]}
+{"n": 1965, "row": 1966, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 1966, "row": 1967, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW"]}
+{"n": 1967, "row": 1968, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 1968, "row": 1969, "ntype": "descriptive", "flags": []}
+{"n": 1969, "row": 1970, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1970, "row": 1971, "ntype": "kit", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_FAIL", "KSR_NONE"]}
+{"n": 1971, "row": 1972, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 1972, "row": 1973, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1973, "row": 1974, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 1974, "row": 1975, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 1975, "row": 1976, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 1976, "row": 1977, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1977, "row": 1978, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "FILLER"]}
+{"n": 1978, "row": 1979, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 1979, "row": 1980, "ntype": "descriptive", "flags": []}
+{"n": 1980, "row": 1981, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 1981, "row": 1982, "ntype": "descriptive", "flags": []}
+{"n": 1982, "row": 1983, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 1983, "row": 1984, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 1984, "row": 1985, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 1985, "row": 1986, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 1986, "row": 1987, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 1987, "row": 1988, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 1988, "row": 1989, "ntype": "gost", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1989, "row": 1990, "ntype": "article", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 1990, "row": 1991, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 1991, "row": 1992, "ntype": "article", "flags": []}
+{"n": 1992, "row": 1993, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK"]}
+{"n": 1993, "row": 1994, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 1994, "row": 1995, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 1995, "row": 1996, "ntype": "gost", "flags": ["CTX_GENERAL", "VERIFY_WARN", "FILLER"]}
+{"n": 1996, "row": 1997, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF"]}
+{"n": 1997, "row": 1998, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 1998, "row": 1999, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 1999, "row": 2000, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 2000, "row": 2001, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 2001, "row": 2002, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP", "VERIFY_FAIL", "MANUF_LEAK"]}
+{"n": 2002, "row": 2003, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 2003, "row": 2004, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2004, "row": 2005, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 2005, "row": 2006, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2006, "row": 2007, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2007, "row": 2008, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2008, "row": 2009, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2009, "row": 2010, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2010, "row": 2011, "ntype": "service", "flags": []}
+{"n": 2011, "row": 2012, "ntype": "gost", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2012, "row": 2013, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2013, "row": 2014, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2014, "row": 2015, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2015, "row": 2016, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 2016, "row": 2017, "ntype": "descriptive", "flags": []}
+{"n": 2017, "row": 2018, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2018, "row": 2019, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 2019, "row": 2020, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2020, "row": 2021, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 2021, "row": 2022, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2022, "row": 2023, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2023, "row": 2024, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2024, "row": 2025, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 2025, "row": 2026, "ntype": "gost", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2026, "row": 2027, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2027, "row": 2028, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2028, "row": 2029, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 2029, "row": 2030, "ntype": "descriptive", "flags": []}
+{"n": 2030, "row": 2031, "ntype": "gost", "flags": []}
+{"n": 2031, "row": 2032, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2032, "row": 2033, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2033, "row": 2034, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2034, "row": 2035, "ntype": "descriptive", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2035, "row": 2036, "ntype": "gost", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2036, "row": 2037, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2037, "row": 2038, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 2038, "row": 2039, "ntype": "kit", "flags": ["CTX_GENERAL"]}
+{"n": 2039, "row": 2040, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2040, "row": 2041, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2041, "row": 2042, "ntype": "gost", "flags": ["KSR_NONE"]}
+{"n": 2042, "row": 2043, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "SYN_DUP"]}
+{"n": 2043, "row": 2044, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2044, "row": 2045, "ntype": "descriptive", "flags": []}
+{"n": 2045, "row": 2046, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2046, "row": 2047, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 2047, "row": 2048, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2048, "row": 2049, "ntype": "gost", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 2049, "row": 2050, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 2050, "row": 2051, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2051, "row": 2052, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2052, "row": 2053, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 2053, "row": 2054, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2054, "row": 2055, "ntype": "article", "flags": []}
+{"n": 2055, "row": 2056, "ntype": "descriptive", "flags": []}
+{"n": 2056, "row": 2057, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2057, "row": 2058, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 2058, "row": 2059, "ntype": "descriptive", "flags": []}
+{"n": 2059, "row": 2060, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2060, "row": 2061, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2061, "row": 2062, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 2062, "row": 2063, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2063, "row": 2064, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "LOW_CONF", "KSR_DOWNGRADE"]}
+{"n": 2064, "row": 2065, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2065, "row": 2066, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2066, "row": 2067, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "FILLER", "KSR_NONE"]}
+{"n": 2067, "row": 2068, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2068, "row": 2069, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 2069, "row": 2070, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER"]}
+{"n": 2070, "row": 2071, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2071, "row": 2072, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "SYN_DUP", "FILLER"]}
+{"n": 2072, "row": 2073, "ntype": "gost", "flags": []}
+{"n": 2073, "row": 2074, "ntype": "service", "flags": []}
+{"n": 2074, "row": 2075, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2075, "row": 2076, "ntype": "gost", "flags": ["MARKET_DOMINANT", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2076, "row": 2077, "ntype": "kit", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 2077, "row": 2078, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2078, "row": 2079, "ntype": "article", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 2079, "row": 2080, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 2080, "row": 2081, "ntype": "article", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 2081, "row": 2082, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2082, "row": 2083, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 2083, "row": 2084, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2084, "row": 2085, "ntype": "gost", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 2085, "row": 2086, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2086, "row": 2087, "ntype": "article", "flags": []}
+{"n": 2087, "row": 2088, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2088, "row": 2089, "ntype": "article", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 2089, "row": 2090, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 2090, "row": 2091, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL"]}
+{"n": 2091, "row": 2092, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 2092, "row": 2093, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 2093, "row": 2094, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2094, "row": 2095, "ntype": "descriptive", "flags": ["MARKET_DOMINANT"]}
+{"n": 2095, "row": 2096, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2096, "row": 2097, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2097, "row": 2098, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2098, "row": 2099, "ntype": "gost", "flags": []}
+{"n": 2099, "row": 2100, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 2100, "row": 2101, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2101, "row": 2102, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2102, "row": 2103, "ntype": "typical", "flags": ["VERIFY_FAIL", "KSR_NONE"]}
+{"n": 2103, "row": 2104, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2104, "row": 2105, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2105, "row": 2106, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2106, "row": 2107, "ntype": "gost", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2107, "row": 2108, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 2108, "row": 2109, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "KSR_DOWNGRADE"]}
+{"n": 2109, "row": 2110, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2110, "row": 2111, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 2111, "row": 2112, "ntype": "article", "flags": ["MARKET_DOMINANT", "SYN_DUP", "LOW_CONF"]}
+{"n": 2112, "row": 2113, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2113, "row": 2114, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2114, "row": 2115, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2115, "row": 2116, "ntype": "article", "flags": ["FILLER", "KSR_DOWNGRADE"]}
+{"n": 2116, "row": 2117, "ntype": "kit", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 2117, "row": 2118, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 2118, "row": 2119, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 2119, "row": 2120, "ntype": "typical", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 2120, "row": 2121, "ntype": "article", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2121, "row": 2122, "ntype": "service", "flags": []}
+{"n": 2122, "row": 2123, "ntype": "service", "flags": []}
+{"n": 2123, "row": 2124, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2124, "row": 2125, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2125, "row": 2126, "ntype": "article", "flags": []}
+{"n": 2126, "row": 2127, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 2127, "row": 2128, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2128, "row": 2129, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2129, "row": 2130, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2130, "row": 2131, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 2131, "row": 2132, "ntype": "gost", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 2132, "row": 2133, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 2133, "row": 2134, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2134, "row": 2135, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2135, "row": 2136, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_DOWNGRADE"]}
+{"n": 2136, "row": 2137, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2137, "row": 2138, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 2138, "row": 2139, "ntype": "article", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 2139, "row": 2140, "ntype": "descriptive", "flags": ["MANUF_LEAK"]}
+{"n": 2140, "row": 2141, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 2141, "row": 2142, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2142, "row": 2143, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 2143, "row": 2144, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2144, "row": 2145, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 2145, "row": 2146, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT"]}
+{"n": 2146, "row": 2147, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2147, "row": 2148, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "FILLER"]}
+{"n": 2148, "row": 2149, "ntype": "service", "flags": []}
+{"n": 2149, "row": 2150, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK"]}
+{"n": 2150, "row": 2151, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2151, "row": 2152, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER"]}
+{"n": 2152, "row": 2153, "ntype": "article", "flags": ["VERIFY_FAIL", "FILLER"]}
+{"n": 2153, "row": 2154, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2154, "row": 2155, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2155, "row": 2156, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2156, "row": 2157, "ntype": "typical", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2157, "row": 2158, "ntype": "article", "flags": ["MARKET_DOMINANT"]}
+{"n": 2158, "row": 2159, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "KSR_NONE"]}
+{"n": 2159, "row": 2160, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2160, "row": 2161, "ntype": "article", "flags": []}
+{"n": 2161, "row": 2162, "ntype": "descriptive", "flags": ["SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2162, "row": 2163, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2163, "row": 2164, "ntype": "service", "flags": []}
+{"n": 2164, "row": 2165, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP"]}
+{"n": 2165, "row": 2166, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2166, "row": 2167, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "KSR_NONE"]}
+{"n": 2167, "row": 2168, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 2168, "row": 2169, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2169, "row": 2170, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2170, "row": 2171, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2171, "row": 2172, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 2172, "row": 2173, "ntype": "article", "flags": ["MARKET_DOMINANT", "VERIFY_FAIL", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 2173, "row": 2174, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2174, "row": 2175, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2175, "row": 2176, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 2176, "row": 2177, "ntype": "gost", "flags": []}
+{"n": 2177, "row": 2178, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2178, "row": 2179, "ntype": "article", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2179, "row": 2180, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "LOW_CONF"]}
+{"n": 2180, "row": 2181, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2181, "row": 2182, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP"]}
+{"n": 2182, "row": 2183, "ntype": "gost", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2183, "row": 2184, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2184, "row": 2185, "ntype": "kit", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2185, "row": 2186, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2186, "row": 2187, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2187, "row": 2188, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 2188, "row": 2189, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2189, "row": 2190, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 2190, "row": 2191, "ntype": "service", "flags": ["CTX_GENERAL"]}
+{"n": 2191, "row": 2192, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 2192, "row": 2193, "ntype": "gost", "flags": ["VERIFY_FAIL"]}
+{"n": 2193, "row": 2194, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "LOW_CONF", "KSR_NONE"]}
+{"n": 2194, "row": 2195, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 2195, "row": 2196, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 2196, "row": 2197, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2197, "row": 2198, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2198, "row": 2199, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2199, "row": 2200, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 2200, "row": 2201, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2201, "row": 2202, "ntype": "typical", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 2202, "row": 2203, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 2203, "row": 2204, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2204, "row": 2205, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 2205, "row": 2206, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 2206, "row": 2207, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2207, "row": 2208, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 2208, "row": 2209, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF"]}
+{"n": 2209, "row": 2210, "ntype": "article", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2210, "row": 2211, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2211, "row": 2212, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2212, "row": 2213, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2213, "row": 2214, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 2214, "row": 2215, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2215, "row": 2216, "ntype": "gost", "flags": []}
+{"n": 2216, "row": 2217, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_LATIN_NEW"]}
+{"n": 2217, "row": 2218, "ntype": "article", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2218, "row": 2219, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2219, "row": 2220, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2220, "row": 2221, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER", "KSR_NONE"]}
+{"n": 2221, "row": 2222, "ntype": "descriptive", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 2222, "row": 2223, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2223, "row": 2224, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "VERIFY_WARN", "FILLER"]}
+{"n": 2224, "row": 2225, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 2225, "row": 2226, "ntype": "descriptive", "flags": ["VERIFY_WARN"]}
+{"n": 2226, "row": 2227, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2227, "row": 2228, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2228, "row": 2229, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 2229, "row": 2230, "ntype": "descriptive", "flags": ["SYN_DUP"]}
+{"n": 2230, "row": 2231, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2231, "row": 2232, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 2232, "row": 2233, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2233, "row": 2234, "ntype": "article", "flags": []}
+{"n": 2234, "row": 2235, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2235, "row": 2236, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 2236, "row": 2237, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2237, "row": 2238, "ntype": "descriptive", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2238, "row": 2239, "ntype": "typical", "flags": []}
+{"n": 2239, "row": 2240, "ntype": "gost", "flags": ["SYN_DUP"]}
+{"n": 2240, "row": 2241, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER", "KSR_NONE"]}
+{"n": 2241, "row": 2242, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 2242, "row": 2243, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 2243, "row": 2244, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2244, "row": 2245, "ntype": "article", "flags": ["CTX_GENERAL", "NEIGHBOR_DROP"]}
+{"n": 2245, "row": 2246, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 2246, "row": 2247, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 2247, "row": 2248, "ntype": "gost", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2248, "row": 2249, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL"]}
+{"n": 2249, "row": 2250, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 2250, "row": 2251, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 2251, "row": 2252, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2252, "row": 2253, "ntype": "service", "flags": []}
+{"n": 2253, "row": 2254, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2254, "row": 2255, "ntype": "article", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2255, "row": 2256, "ntype": "gost", "flags": ["VERIFY_WARN", "MANUF_LEAK"]}
+{"n": 2256, "row": 2257, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2257, "row": 2258, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 2258, "row": 2259, "ntype": "descriptive", "flags": ["VERIFY_FAIL", "MANUF_LEAK", "FILLER"]}
+{"n": 2259, "row": 2260, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 2260, "row": 2261, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2261, "row": 2262, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2262, "row": 2263, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2263, "row": 2264, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2264, "row": 2265, "ntype": "descriptive", "flags": []}
+{"n": 2265, "row": 2266, "ntype": "gost", "flags": ["MARKET_DOMINANT"]}
+{"n": 2266, "row": 2267, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 2267, "row": 2268, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2268, "row": 2269, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2269, "row": 2270, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2270, "row": 2271, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 2271, "row": 2272, "ntype": "descriptive", "flags": []}
+{"n": 2272, "row": 2273, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_NONE"]}
+{"n": 2273, "row": 2274, "ntype": "article", "flags": ["MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 2274, "row": 2275, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 2275, "row": 2276, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 2276, "row": 2277, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2277, "row": 2278, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MARKET_DOMINANT", "KSR_DOWNGRADE"]}
+{"n": 2278, "row": 2279, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "SYN_DUP"]}
+{"n": 2279, "row": 2280, "ntype": "descriptive", "flags": ["CTX_GENERAL"]}
+{"n": 2280, "row": 2281, "ntype": "article", "flags": []}
+{"n": 2281, "row": 2282, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MARKET_DOMINANT", "VERIFY_WARN"]}
+{"n": 2282, "row": 2283, "ntype": "article", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2283, "row": 2284, "ntype": "service", "flags": ["CTX_GENERAL", "VERIFY_WARN", "SYN_DUP"]}
+{"n": 2284, "row": 2285, "ntype": "typical", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2285, "row": 2286, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2286, "row": 2287, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2287, "row": 2288, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF", "KSR_NONE"]}
+{"n": 2288, "row": 2289, "ntype": "article", "flags": ["SYN_DUP"]}
+{"n": 2289, "row": 2290, "ntype": "article", "flags": []}
+{"n": 2290, "row": 2291, "ntype": "article", "flags": ["SYN_DUP", "LOW_CONF", "KSR_NONE"]}
+{"n": 2291, "row": 2292, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_DUP"]}
+{"n": 2292, "row": 2293, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2293, "row": 2294, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 2294, "row": 2295, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2295, "row": 2296, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_NONE"]}
+{"n": 2296, "row": 2297, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2297, "row": 2298, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2298, "row": 2299, "ntype": "article", "flags": ["CTX_GENERAL", "MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2299, "row": 2300, "ntype": "article", "flags": []}
+{"n": 2300, "row": 2301, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2301, "row": 2302, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_WARN", "SYN_DUP", "KSR_NONE"]}
+{"n": 2302, "row": 2303, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2303, "row": 2304, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2304, "row": 2305, "ntype": "gost", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2305, "row": 2306, "ntype": "article", "flags": ["NEIGHBOR_DROP", "VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2306, "row": 2307, "ntype": "article", "flags": ["NEIGHBOR_DROP"]}
+{"n": 2307, "row": 2308, "ntype": "article", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2308, "row": 2309, "ntype": "descriptive", "flags": ["FILLER", "KSR_NONE"]}
+{"n": 2309, "row": 2310, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 2310, "row": 2311, "ntype": "article", "flags": ["MARKET_DOMINANT", "FILLER"]}
+{"n": 2311, "row": 2312, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2312, "row": 2313, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "SYN_COPY"]}
+{"n": 2313, "row": 2314, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2314, "row": 2315, "ntype": "gost", "flags": ["SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 2315, "row": 2316, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 2316, "row": 2317, "ntype": "descriptive", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2317, "row": 2318, "ntype": "kit", "flags": ["CTX_GENERAL", "FILLER", "KSR_DOWNGRADE"]}
+{"n": 2318, "row": 2319, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_NONE"]}
+{"n": 2319, "row": 2320, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW"]}
+{"n": 2320, "row": 2321, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2321, "row": 2322, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP", "FILLER"]}
+{"n": 2322, "row": 2323, "ntype": "article", "flags": ["VERIFY_WARN", "SYN_DUP"]}
+{"n": 2323, "row": 2324, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2324, "row": 2325, "ntype": "kit", "flags": ["VERIFY_FAIL", "SYN_DUP"]}
+{"n": 2325, "row": 2326, "ntype": "article", "flags": ["SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2326, "row": 2327, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER"]}
+{"n": 2327, "row": 2328, "ntype": "article", "flags": ["SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2328, "row": 2329, "ntype": "article", "flags": ["NEIGHBOR_DROP", "KSR_DOWNGRADE"]}
+{"n": 2329, "row": 2330, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2330, "row": 2331, "ntype": "descriptive", "flags": ["MANUF_LEAK", "SYN_LATIN_NEW", "FILLER", "KSR_NONE"]}
+{"n": 2331, "row": 2332, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP"]}
+{"n": 2332, "row": 2333, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2333, "row": 2334, "ntype": "descriptive", "flags": []}
+{"n": 2334, "row": 2335, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2335, "row": 2336, "ntype": "article", "flags": ["NEIGHBOR_DROP", "MANUF_LEAK", "SYN_LATIN_NEW", "KSR_DOWNGRADE"]}
+{"n": 2336, "row": 2337, "ntype": "gost", "flags": []}
+{"n": 2337, "row": 2338, "ntype": "typical", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 2338, "row": 2339, "ntype": "descriptive", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2339, "row": 2340, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2340, "row": 2341, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2341, "row": 2342, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2342, "row": 2343, "ntype": "gost", "flags": ["SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2343, "row": 2344, "ntype": "gost", "flags": ["CTX_GENERAL", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2344, "row": 2345, "ntype": "gost", "flags": []}
+{"n": 2345, "row": 2346, "ntype": "descriptive", "flags": ["KSR_NONE"]}
+{"n": 2346, "row": 2347, "ntype": "kit", "flags": ["KSR_DOWNGRADE"]}
+{"n": 2347, "row": 2348, "ntype": "article", "flags": ["VERIFY_FAIL", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2348, "row": 2349, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2349, "row": 2350, "ntype": "article", "flags": ["CTX_GENERAL", "SYN_DUP", "KSR_NONE"]}
+{"n": 2350, "row": 2351, "ntype": "article", "flags": ["MANUF_LEAK", "FILLER"]}
+{"n": 2351, "row": 2352, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "FILLER", "KSR_NONE"]}
+{"n": 2352, "row": 2353, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2353, "row": 2354, "ntype": "descriptive", "flags": []}
+{"n": 2354, "row": 2355, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2355, "row": 2356, "ntype": "typical", "flags": ["KSR_NONE"]}
+{"n": 2356, "row": 2357, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2357, "row": 2358, "ntype": "article", "flags": ["MANUF_LEAK"]}
+{"n": 2358, "row": 2359, "ntype": "gost", "flags": []}
+{"n": 2359, "row": 2360, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2360, "row": 2361, "ntype": "gost", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_NONE"]}
+{"n": 2361, "row": 2362, "ntype": "article", "flags": ["KSR_NONE"]}
+{"n": 2362, "row": 2363, "ntype": "descriptive", "flags": []}
+{"n": 2363, "row": 2364, "ntype": "article", "flags": ["NEIGHBOR_DROP", "FILLER", "KSR_NONE"]}
+{"n": 2364, "row": 2365, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2365, "row": 2366, "ntype": "article", "flags": ["NEIGHBOR_DROP", "SYN_DUP", "KSR_DOWNGRADE"]}
+{"n": 2366, "row": 2367, "ntype": "gost", "flags": ["MANUF_LEAK", "SYN_DUP", "SYN_LATIN_NEW"]}
+{"n": 2367, "row": 2368, "ntype": "article", "flags": ["SYN_DUP", "FILLER"]}
+{"n": 2368, "row": 2369, "ntype": "article", "flags": ["SYN_DUP", "KSR_NONE"]}
+{"n": 2369, "row": 2370, "ntype": "descriptive", "flags": ["SYN_LATIN_NEW", "KSR_NONE"]}
+{"n": 2370, "row": 2371, "ntype": "descriptive", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "SYN_LATIN_NEW"]}
+{"n": 2371, "row": 2372, "ntype": "descriptive", "flags": ["CTX_GENERAL", "MANUF_LEAK", "KSR_NONE"]}
+{"n": 2372, "row": 2373, "ntype": "article", "flags": ["VERIFY_FAIL"]}
+{"n": 2373, "row": 2374, "ntype": "article", "flags": ["MARKET_DOMINANT", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2374, "row": 2375, "ntype": "article", "flags": ["MANUF_LEAK", "SYN_DUP", "KSR_NONE"]}
+{"n": 2375, "row": 2376, "ntype": "descriptive", "flags": ["FILLER"]}
+{"n": 2376, "row": 2377, "ntype": "descriptive", "flags": ["CTX_GENERAL", "KSR_DOWNGRADE"]}
+{"n": 2377, "row": 2378, "ntype": "article", "flags": ["CTX_GENERAL", "VERIFY_FAIL"]}
+{"n": 2378, "row": 2379, "ntype": "descriptive", "flags": ["CTX_GENERAL", "VERIFY_WARN", "KSR_DOWNGRADE"]}
+{"n": 2379, "row": 2380, "ntype": "article", "flags": ["FILLER"]}
+{"n": 2380, "row": 2381, "ntype": "article", "flags": ["VERIFY_WARN", "MANUF_LEAK", "SYN_LATIN_NEW", "FILLER"]}
+{"n": 2381, "row": 2382, "ntype": "service", "flags": ["CTX_GENERAL", "FILLER"]}

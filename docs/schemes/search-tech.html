@@ -1,0 +1,308 @@
+<title>Поиск: техническая схема</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Mono&display=swap">
+<style>
+  /* Layout: header, counts strip, controls, then [graph | panel]; cool neutral ground, five role hues. */
+  :root {
+    --bg: #f4f6f9; --fg: #1c2330; --muted: #5a6677; --panel: #ffffff; --line: #d6dce6; --accent: #d9541f;
+    --code: #3a6db4; --code-fill: #e2ecf9;
+    --model: #7a4fbf; --model-fill: #ece5f8;
+    --human: #c0711a; --human-fill: #fbecd8;
+    --store: #3f8a78; --store-fill: #dff0ea;
+    --ext: #b4475e; --ext-fill: #f9e4ea;
+    --edge: #8a93a2; --edge-cfg: #b3bac6; --lane: #e9edf3; --lane-border: #cfd6e0;
+    --font: "PT Sans", "Segoe UI", Arial, sans-serif; --mono: "PT Mono", "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141821; --fg: #e8ecf3; --muted: #9aa5b6; --panel: #1b212c; --line: #2c3442; --accent: #ff7a3d;
+      --code: #7ea7e8; --code-fill: #22314b; --model: #b596ec; --model-fill: #2e2648;
+      --human: #e8a45a; --human-fill: #41301c; --store: #7fc6b2; --store-fill: #1e3b35;
+      --ext: #f093a8; --ext-fill: #44232c; --edge: #7d8796; --edge-cfg: #58616f; --lane: #1a2029; --lane-border: #2f3845;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141821; --fg: #e8ecf3; --muted: #9aa5b6; --panel: #1b212c; --line: #2c3442; --accent: #ff7a3d;
+    --code: #7ea7e8; --code-fill: #22314b; --model: #b596ec; --model-fill: #2e2648;
+    --human: #e8a45a; --human-fill: #41301c; --store: #7fc6b2; --store-fill: #1e3b35;
+    --ext: #f093a8; --ext-fill: #44232c; --edge: #7d8796; --edge-cfg: #58616f; --lane: #1a2029; --lane-border: #2f3845;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 15px; line-height: 1.45; }
+  .wrap { padding-block: 18px 28px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 1760px; margin: 0 auto; }
+  header h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: .01em; text-wrap: balance; }
+  header p { margin: 0; color: var(--muted); max-width: 80ch; }
+  .chain { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin: 14px 0 10px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .chain b { color: var(--fg); font-weight: 400; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; white-space: nowrap; }
+  .chain span.arrow { opacity: .6; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 12px; }
+  .controls .group { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .controls .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-right: 2px; }
+  button, .chip { font: inherit; font-size: 14px; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  button:hover, .chip:hover { border-color: var(--muted); }
+  button:focus-visible, .chip:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chip[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .chip .sw { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; border: 1.5px solid; }
+  .chip[data-role="code"] .sw { background: var(--code-fill); border-color: var(--code); }
+  .chip[data-role="model"] .sw { background: var(--model-fill); border-color: var(--model); clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); border-radius: 0; }
+  .chip[data-role="human"] .sw { background: var(--human-fill); border-color: var(--human); border-radius: 50%; }
+  .chip[data-role="store"] .sw { background: var(--store-fill); border-color: var(--store); border-radius: 2px 2px 6px 6px; }
+  .chip[data-role="ext"] .sw { background: var(--ext-fill); border-color: var(--ext); clip-path: polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%); border-radius: 0; }
+  label.check { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; cursor: pointer; }
+  .stage { display: grid; grid-template-columns: minmax(0, 1fr) 350px; gap: 14px; align-items: start; }
+  #cy { width: 100%; height: 80vh; min-height: 480px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; max-height: 80vh; overflow: auto; min-width: 0; }
+  .panel h2 { font-size: 19px; margin: 0 0 8px; line-height: 1.25; text-wrap: balance; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .badge.role-code { border-color: var(--code); color: var(--code); }
+  .badge.role-model { border-color: var(--model); color: var(--model); }
+  .badge.role-human { border-color: var(--human); color: var(--human); }
+  .badge.role-store { border-color: var(--store); color: var(--store); }
+  .badge.role-ext { border-color: var(--ext); color: var(--ext); }
+  .badge.role-io { border-color: var(--code); color: var(--code); }
+  .badge.plan, .badge.flag { border-style: dashed; }
+  .count { font-family: var(--mono); font-size: 13px; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; margin: 6px 0 12px; }
+  .panel dl { margin: 0; }
+  .panel dt { font-size: 11.5px; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin-top: 10px; }
+  .panel dd { margin: 2px 0 0; font-size: 14.5px; }
+  .panel dd.ex { background: var(--bg); border-left: 3px solid var(--accent); padding: 6px 10px; border-radius: 0 8px 8px 0; }
+  .panel dd.mono { font-family: var(--mono); font-size: 12.5px; }
+  .legend { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; font-size: 13.5px; margin-top: 10px; }
+  .legend .it { display: flex; align-items: center; gap: 8px; }
+  .legend .ln { width: 34px; height: 0; border-top: 2.5px solid var(--edge); flex: none; }
+  .legend .ln.dash { border-top-style: dashed; }
+  .legend .ln.thin { border-top-width: 1.5px; border-top-color: var(--edge-cfg); border-top-style: dotted; }
+  .legend .sh { width: 22px; height: 16px; border: 1.5px solid; flex: none; }
+  .legend .sh.code { border-color: var(--code); background: var(--code-fill); border-radius: 4px; }
+  .legend .sh.model { border-color: var(--model); background: var(--model-fill); clip-path: polygon(20% 0,80% 0,100% 50%,80% 100%,20% 100%,0 50%); }
+  .legend .sh.human { border-color: var(--human); background: var(--human-fill); border-radius: 50%; }
+  .legend .sh.store { border-color: var(--store); background: var(--store-fill); border-radius: 3px 3px 8px 8px; }
+  .legend .sh.ext { border-color: var(--ext); background: var(--ext-fill); clip-path: polygon(20% 0,80% 0,100% 25%,100% 75%,80% 100%,20% 100%,0 75%,0 25%); }
+  .legend .sh.plan { border-style: dashed; border-color: var(--muted); background: transparent; border-radius: 4px; }
+  #fallback { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+  #fallback ol { padding-left: 20px; }
+  .hint { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  @media (max-width: 900px) {
+    .stage { grid-template-columns: 1fr; }
+    #cy { height: 60vh; min-height: 420px; }
+    .panel { max-height: none; }
+    header h1 { font-size: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<div class="wrap">
+  <header>
+    <h1>Поиск: техническая схема</h1>
+    <p>Тот же путь запроса с файлами, функциями, параметрами и цифрами замеров — для защиты. В нижней полосе добавлены обучение решения и страховки живой починки.</p>
+  </header>
+  <div class="chain" aria-label="Сколько строк и кандидатов остаётся после шагов"><b>база 2 381</b><span class="arrow">→</span><b>3 канала × 100</b><span class="arrow">→</span><b>слияние: 30</b><span class="arrow">→</span><b>правила: минус нарушители</b><span class="arrow">→</span><b>порог 0.92</b><span class="arrow">→</span><b>выдача ≤ 5 · или «не найдено» + подсказка КСР</b></div>
+  <div class="controls">
+    <div class="group" role="group" aria-label="Подсветить роль">
+      <span class="lbl">Роль</span>
+      <button class="chip" data-role="code" aria-pressed="false"><span class="sw"></span>код</button>
+      <button class="chip" data-role="model" aria-pressed="false"><span class="sw"></span>модель</button>
+      <button class="chip" data-role="human" aria-pressed="false"><span class="sw"></span>человек</button>
+      <button class="chip" data-role="store" aria-pressed="false"><span class="sw"></span>хранилище</button>
+      <button class="chip" data-role="ext" aria-pressed="false"><span class="sw"></span>внешний сервис</button>
+    </div>
+    <div class="group">
+      <label class="check"><input type="checkbox" id="show-plan" checked> показывать план</label>
+      <button id="btn-walk">Пример по шагам ▸</button>
+      <button id="btn-fit">Вписать</button>
+      <button id="btn-reset">Сброс</button>
+    </div>
+  </div>
+  <div class="stage">
+    <div id="cy" role="img" aria-label="Техническая схема поиска с файлами, функциями, параметрами, обучением решения и страховками починки"></div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+  <div id="fallback" hidden>
+    <p>Библиотека схемы не загрузилась. Шаги списком:</p>
+    <ol id="fallback-list"></ol>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<script>window.SCHEME = {"parents": [{"id": "src", "label": "ИЗ ПОДГОТОВКИ"}, {"id": "online", "label": "НА КАЖДЫЙ ЗАПРОС · локально, без внешних вызовов, 0,3–1,5 с"}, {"id": "know", "label": "ПРАВИЛА · ПОДТВЕРЖДЕНИЯ · ЗАМЕР"}], "nodes": [{"id": "prepared", "parent": "src", "role": "store", "x": 510, "y": -60, "label": "Готовая база поиска\nкарточки · векторы · КСР", "title": "Готовая база поиска", "count": "2 381 строка: имена, карточки, векторы, слой КСР; загрузка движка ~20 с", "what": "Результат подготовки, лежит в репозитории. При запросе внешних вызовов нет — всё локально.", "why": "Поиск работает на чистой машине без ключей.", "tune": "Пересборка индексов одной командой.", "files": "data/full/prep_runtime.jsonl · data/index/e5-base · data/model/decision.json"}, {"id": "query", "parent": "online", "role": "io", "x": 70, "y": 110, "label": "Запрос\nполе или строка ведомости", "title": "Запрос", "count": "1 строка", "what": "Текст из поля ввода или строка загруженной ведомости.", "why": "Один путь для одиночного запроса и для файла.", "ex": "«кабель КВВГнг-LS 7*1.5» — сквозной пример этой схемы."}, {"id": "batch", "parent": "online", "role": "code", "x": 70, "y": 290, "label": "Вкладка «Ведомость»\nxlsx · csv → статусы", "title": "Проверка ведомости файлом", "count": "до 2 000 строк за раз; статус по каждой строке; выгрузка в Excel", "what": "Колонка наименований находится по заголовку или как самая текстовая. Каждая строка: найдено (статус и лучшая позиция), «не найдено» с подсказкой КСР, «пустая строка». Результат скачивается xlsx-файлом.", "why": "Защита пройдёт на чужих ведомостях: другой бланк, битые строки, позиции не из справочника.", "bad": "Единиц в базе закупок нет — единица ведомости показывается рядом, но не сравнивается.", "tune": "Быстрый или основной режим (с реранкером ~1 с на строку).", "files": "app/web.py · /api/sheet; выгрузка openpyxl"}, {"id": "parse", "parent": "online", "role": "code", "x": 290, "y": 110, "label": "Разбор запроса\nвид · марка · характеристики", "title": "Разбор запроса", "count": "вид, марки, сечение, размеры, мощность, напряжение, ток, Мп, IP, масса", "what": "Код разбирает запрос теми же правилами, что и базу: «3х1,5», «3*1.5» и «3×1,5 мм2» читаются одинаково; марки сворачиваются в ключ (латиница и кириллица складываются). Разобранное показывается над выдачей — видно, что поиск понял.", "why": "Характеристики решают: без разбора «похоже по словам» не отличить от «подходит по сути».", "bad": "Известные ошибки помечены тестами: «159 миллиметров» читается метрами, строчное «д125» — кодом, «006В» — напряжением. Все 6 помечены xfail(strict) в tests/test_attrs.py.", "tune": "Словари видов и сокращений — rules/synonyms.yaml, правит специалист; после правки: какие строки базы изменили разбор и какие запросы изменили выдачу. Снимок разбора: scripts/attrs_diff.", "files": "app/attrs.py · parse, kind_match, code_relation; app/normalize.py", "ex": "вид «кабель» · марка КВВГнг-LS · сечение 7×1,5."}, {"id": "qtype", "parent": "online", "role": "code", "x": 510, "y": 110, "label": "Тип запроса\nобычный · услуга · надбавка", "title": "Тип запроса и ветвления", "count": "обычный → 2 279 строк · услуга → 92 · надбавка → 10 · мусор → отказ", "what": "Запрос без единого вида и марки («1.7.2)») сразу получает «недостаточно данных». Вид «перевозка, погрузка, разгрузка, доставка» — ищем только среди строк-услуг. «Надбавка, доплата» — только среди надбавок. Обычный запрос услуг и надбавок не видит никогда.", "why": "29 строк услуг называют материал в скобках: без ветки запрос «кабель ОКГТ» получал бы первой погрузку этого кабеля.", "bad": "Класс груза и расстояние услуг пока не сравниваются — ранжируют слова и смысл.", "tune": "Список слов-услуг в коде решения.", "files": "app/decision.py · query_type; тип строки из подготовки", "ex": "«перевозка грузов до 5 т на 6 км» → только перевозки; «кабель ОКГТ-ц 16G.652D» → строка погрузки #137 отсечена."}, {"id": "cands", "parent": "online", "role": "code", "x": 730, "y": 110, "label": "Три канала кандидатов\nслова · карточки · смысл", "title": "Три канала кандидатов", "count": "до 100 + 100 + 100", "what": "Слова наименований (точные написания), слова карточек (синонимы с подготовки), смысловые векторы (перефразировки).", "why": "Каналы дополняют друг друга: что пропустит один, поймает другой. Вклад каждого замерен лесенкой: слова 46 → нормализация 64 → карточки 68 → векторы 72 верных первым из 80.", "bad": "Если верной строки нет ни в одном канале — дальше её не вернуть (на замерах такого не было: в пятёрку не попадали по другим причинам).", "tune": "Размеры выборок каналов. BM25 k1=1.5 b=0.75 по norm-токенам; косинус e5 — максимум по 4 полям.", "files": "app/searcher.py · bm_norm, bm_card, qvec/cos"}, {"id": "fuse", "parent": "online", "role": "code", "x": 950, "y": 110, "label": "Слияние списков\n→ 30 лучших", "title": "Слияние списков", "count": "300 → 30", "what": "Три списка складываются по местам: строка, стоящая высоко сразу в нескольких каналах, поднимается.", "why": "Оценки каналов несравнимы между собой, а места — сравнимы.", "tune": "Глубина пула. RRF: Σ 1/(60 + место); пул 30 — как при обучении решения.", "files": "app/decision.py · build"}, {"id": "rerank", "parent": "online", "role": "model", "status": "flag", "x": 1170, "y": 110, "label": "Сверяющая модель\nчитает пары, ~0,7 с", "title": "Сверяющая модель (реранкер)", "count": "30 пар «запрос — кандидат» за ~0,7 с на процессоре", "what": "Локальная модель читает запрос и кандидата вместе и оценивает, об одном ли они. Оценка идёт признаком в решение.", "why": "Покупает честное «не найдено»: 23 из 27 против 16 из 27 без неё (перекрёстная проверка) — ценой пары пунктов ранжирования.", "bad": "Самый дорогой шаг по времени; в быстром режиме выключена — тогда решение работает по остальным признакам.", "tune": "Флаг «быстрый режим» на странице. BAAI/bge-reranker-v2-m3, 568M, max_length 256.", "files": "app/searcher.py · rerank_scores"}, {"id": "rules", "parent": "online", "role": "code", "x": 1390, "y": 110, "label": "Жёсткие правила\nспециалиста", "title": "Жёсткие правила специалиста", "count": "нарушители отбрасываются с причиной до всякой модели", "what": "Разобранные характеристики сравниваются; правило «строго» отбрасывает кандидата, правило «ступени» допускает соседнюю ступень ряда.", "why": "Текст не может перевесить сечение: кабель 5х1,5 при запросе 7×1,5 не станет аналогом. Это требование ТЗ — правила не в промпте, а в файле.", "bad": "Правило видит только разобранные характеристики: что не разобрано, то не проверяется (помечается «не указано»).", "tune": "rules/rules.yaml — правит специалист; в прототипе три правила-допущения: сечение кабеля строго, разрешение камеры ±1 ступень, мощность трансформатора строго.", "files": "app/searcher.py · judge + rules/rules.yaml", "ex": "КВВГнг-LS 5х1,5 и 4х1,5 → «не подходит: сечение 5x1.5 вместо 7x1.5»."}, {"id": "decide", "parent": "online", "role": "model", "x": 1610, "y": 110, "label": "Решение «подходит?»\n14 признаков → вероятность", "title": "Обученное решение «подходит или нет»", "count": "обучено на 136 проверочных запросах; перекрёстная проверка: верный первым 91 из 109", "what": "Логистическая регрессия складывает 14 признаков кандидата — согласие каналов, близость по смыслу, совпадение вида, марки и характеристик, оценку сверяющей модели — в одну вероятность. Вклад каждого признака показывается в выдаче.", "why": "Ручные жёсткие фильтры ломались на каждой новой манере письма (19 ложных отказов из 80). Обученное решение те же сигналы взвешивает мягко. Характеристики здесь — признаки, а не фильтры.", "bad": "Главная слабость — вид, названный другим словом, тянет балл вниз («датчик» против «извещатель»).", "tune": "Переобучение одной командой на пополненных наборах; при большом объёме подтверждений — отдельная модель статусов. Веса: rrf +1.46, bm_card +1.15, rerank +0.79, kind +0.75, n_diff −0.54.", "files": "app/decision.py · predict, contributions; scripts/train_decision.py → data/model/decision.json", "ex": "лучший кандидат 0.98: «+ совпадение слов карточки · + высоко сразу в нескольких каналах · + оценка сверяющей модели»."}, {"id": "thresh", "parent": "online", "role": "code", "x": 1830, "y": 110, "label": "Порог «не найдено»\n0.92 · ручка бизнеса", "title": "Порог «не найдено»", "count": "порог 0.92 с реранкером, 0.85 без; подобран по предсказаниям для невиданных запросов", "what": "Лучшая вероятность ниже порога → честное «не найдено» и подсказка: ближайшие позиции справочника КСР.", "why": "Неверный аналог дороже пустого ответа. Порог — ручка: выше — честнее молчит на запросах без ответа, ниже — меньше ложных отказов.", "bad": "Все 4 ложных отказа итогового замера — балл 0.88–0.92, на волоске от порога.", "tune": "Число в модели решения; пересчитывается по подтверждениям.", "files": "app/searcher.py · _main; порог в data/model/decision.json", "ex": "«огнетушитель порошковый ОП-5» → не найдено; в КСР есть «Огнетушитель порошковый ОП-5, масса заряда 3,7 кг»."}, {"id": "status", "parent": "online", "role": "code", "x": 1830, "y": 300, "label": "Статус кандидата\nта же · замена · похожая…", "title": "Статус кандидата", "count": "та же позиция · допустимая замена · похожая · с отличием", "what": "«Та же позиция» — всё названное в запросе подтверждено. «Допустимая замена» — отличие в пределах правила специалиста или другая марка при совпавших характеристиках. «Похожая» — противоречий нет, но часть характеристик в базе не указана. «С отличием» — показывается с пометкой, решает человек.", "why": "Требование ТЗ: отличать ту же позицию под другим названием от допустимой замены.", "bad": "Статус считается правилами поверх вероятности: размеченных замен всего 18, учить модель не на чем — отдельная модель статусов в плане.", "tune": "Правила статуса в коде; границы «замены» — из rules.yaml.", "files": "app/searcher.py · _display_status", "ex": "#1171 КВВГЭнг(A)-LS 7х1,5 → «допустимая замена»: сечение совпало, марка с экраном."}, {"id": "output", "parent": "online", "role": "code", "x": 1390, "y": 300, "label": "Выдача ≤ 5\nс объяснением", "title": "Выдача", "count": "до 5 позиций: цена, статус, оценка и её состав, совпало/отличается/не указано", "what": "По каждому кандидату: наименование и цена, статус, из чего сложилась оценка (вклады признаков словами), таблица характеристик, пометки («состав в строке не расписан»). При отказе — ближайшие отклонённые с причинами.", "why": "ТЗ оценивает удобство чтения выдачи и просит показывать, из чего сложилась оценка.", "tune": "Число строк, показ отклонённых.", "files": "app/web.py + static/index.html", "ex": "✓ сечение: 7x1.5 · заметка: код отличается (КВВГЭ — с экраном) · оценка 0.98."}, {"id": "confirm", "parent": "online", "role": "human", "x": 950, "y": 300, "label": "Подтверждения\nспециалиста", "title": "Подтверждения специалиста", "count": "кнопки: та же позиция · допустимая замена · не подходит", "what": "Решения пишутся в журнал. При повторе запроса подтверждённое встаёт первым с пометкой, отклонённое прячется — без всякого переобучения.", "why": "Ответ на вопрос «как улучшать выдачу полгода без дообучения»: выдача умнеет от работы людей.", "tune": "Файл журнала; очистка — удалением строк.", "files": "app/web.py · /api/feedback → data/feedback/feedback.jsonl", "ex": "подтверждение «КВВГЭнг(A)-LS 7х1,5 — та же позиция» → при следующем таком запросе строка первая с пометкой «подтверждено ранее»."}, {"id": "feedback", "parent": "know", "role": "store", "x": 730, "y": 470, "label": "Журнал подтверждений", "title": "Журнал подтверждений", "count": "запрос-ключ · строка · вердикт · время", "what": "Копилка решений специалиста.", "why": "Три применения: память пар (сразу), кандидаты в словарь синонимов и правила (разбор), пополнение контрольного набора и переобучение решения (позже).", "tune": "—", "files": "data/feedback/feedback.jsonl"}, {"id": "synonyms", "parent": "know", "role": "store", "x": 290, "y": 470, "label": "Словарь видов\nrules/synonyms.yaml", "title": "Словарь видов и сокращений", "count": "сокращения (ИБП, гофра…) и синонимы видов (камера = видеокамера)", "what": "Файл специалиста: какие слова считать одним видом изделия и как раскрывать сокращения.", "why": "Вид, названный другим словом, — главный источник ложных отказов (3 из 4 на итоговом замере: «датчик»—«извещатель», «стяжка»—«хомут-стяжка»). Пополнение словаря чинит их без кода.", "bad": "Всегда неполный — пополняется из подтверждений.", "tune": "Правка файла; после неё две команды показывают, что изменилось в разборе и в выдаче.", "files": "rules/synonyms.yaml; проверка: scripts/attrs_diff + scripts/whatchanged"}, {"id": "rulesfile", "parent": "know", "role": "store", "x": 1170, "y": 470, "label": "Файл правил\nrules/rules.yaml", "title": "Файл правил замен", "count": "3 правила-допущения; настоящие задаёт специалист заказчика", "what": "Правила по видам: какая характеристика обязана совпасть строго, где допустимы ступени ряда.", "why": "«Для кабеля сечение должно совпадать строго» попадает сюда — в файл, не в код и не в промпт.", "tune": "Правка файла, поиск перечитывает при запуске; проверка — команда «какие запросы изменили выдачу».", "files": "rules/rules.yaml"}, {"id": "specialist", "parent": "know", "role": "human", "x": 620, "y": 600, "label": "Специалист правит\nсловари и правила", "title": "Специалист правит словари и правила", "what": "Меняет rules/*.yaml и перезапускает поиск; команды показывают, какие строки изменили разбор и какие запросы изменили выдачу — до включения.", "why": "Правила замен — знание специалиста, а не разработчика."}, {"id": "evalset", "parent": "know", "role": "store", "x": 1500, "y": 470, "label": "Контрольные наборы\n176 запросов", "title": "Контрольные наборы", "count": "настройка: 136 (dev 16 + control 20 + big 100) · итоговые слепые: 2 × 20, в каждом 4 без ответа", "what": "Запросы, переписанные «другим человеком», с верными ответами, допустимыми заменами и ловушками (та же вещь с другой характеристикой). Итоговые наборы писали ChatGPT и Gemini, верные ответы размечены вслепую к коду поиска; спорные случаи помечены.", "why": "Пороги и сравнение версий — только по замеру, не «на глаз».", "bad": "На 20 запросах интервал широкий — поэтому наборов два и есть большой на 100.", "tune": "Пополняется из подтверждений.", "files": "eval/*.json; заморозки и журнал: eval/FREEZE.md, eval/JOURNAL.md"}, {"id": "evalrun", "parent": "know", "role": "code", "x": 1720, "y": 600, "label": "Замер лесенкой\nслова → … → основной", "title": "Замер лесенкой", "count": "итог: основной 28 из 32 верных первым, «не найдено» 5 из 8; поиск по словам 22 из 32 и 0 из 8", "what": "Скрипт считает по каждому варианту: верный первым, в пятёрке, позиция с другой важной характеристикой первой, честные и ложные «не найдено» — и сравнивает с поиском по словам.", "why": "Вклад каждого шага виден цифрой; это требование ТЗ.", "bad": "Эталон размечен ИИ-агентами вслепую; спорное помечено, итог даём с интервалами.", "tune": "Наборы и варианты параметрами.", "files": "scripts/eval_search.py; результаты eval/final*/results.md; разбор ошибок eval/final/ERRORS.md", "ex": "интерактивный разбор всех 176 запросов — страница «Замер поиска аналогов»."}, {"id": "train", "parent": "know", "role": "code", "x": 1940, "y": 470, "label": "Обучение решения\ntrain_decision", "title": "Обучение решения и порога", "count": "GroupKFold по запросам; порог по внефолдовым предсказаниям", "what": "Строит признаки кандидатов на 136 запросах, обучает регрессию, честно подбирает порог, сохраняет модель числами в JSON.", "why": "Поведение поиска точно совпадает с тем, на чём обучалась модель (урок П-53).", "tune": "Цель порога: верный первым + 2 × честное «не найдено».", "files": "scripts/train_decision.py → data/model/decision.json", "cmd": ".venv/bin/python -m scripts.train_decision"}, {"id": "guard", "parent": "know", "role": "code", "x": 180, "y": 600, "label": "Страховки починки\nтесты · снимки · диффы", "title": "Страховки для живой починки", "count": "12 тестов зелёные, 6 известных ошибок — xfail(strict); снимок разбора 2 381 строки; эталонная выдача 176 запросов", "what": "Падающий тест → правка → «какие строки базы изменили разбор» → «какие запросы изменили выдачу» → быстрый замер. Наивная правка «д/ф любого регистра = диаметр» ломает 29 строк базы — дифф это показывает сразу.", "why": "Правка агента на защите проверяется за минуту, а не на глаз.", "files": "tests/test_attrs.py · scripts/attrs_diff.py · scripts/whatchanged.py · AGENTS.md", "cmd": "pytest -q && python -m scripts.attrs_diff && python -m scripts.whatchanged"}, {"id": "kitsplit", "parent": "know", "role": "code", "status": "plan", "x": 180, "y": 470, "label": "Разложение комплектов", "title": "Разложение комплектов (план)", "what": "Запрос «шкаф с коммутатором и ИБП» раскладывается на части, части ищутся отдельно, кандидаты сравниваются по составу.", "why": "Сейчас комплекты ищутся целиком; состав после «в составе:» участвует в словах и в сравнении, но на части не раскладывается."}], "edges": [{"id": "query->parse", "source": "query", "target": "parse", "label": "", "kind": "main", "cpd": 0}, {"id": "batch->query", "source": "batch", "target": "query", "label": "по строке", "kind": "norm", "cpd": 20}, {"id": "parse->qtype", "source": "parse", "target": "qtype", "label": "", "kind": "main", "cpd": 0}, {"id": "qtype->cands", "source": "qtype", "target": "cands", "label": "", "kind": "main", "cpd": 0}, {"id": "cands->fuse", "source": "cands", "target": "fuse", "label": "до 300", "kind": "main", "cpd": 0}, {"id": "fuse->rerank", "source": "fuse", "target": "rerank", "label": "30", "kind": "main", "cpd": 0}, {"id": "rerank->rules", "source": "rerank", "target": "rules", "label": "оценка пары", "kind": "main", "cpd": 0}, {"id": "rules->decide", "source": "rules", "target": "decide", "label": "без нарушителей", "kind": "main", "cpd": 0}, {"id": "decide->thresh", "source": "decide", "target": "thresh", "label": "вероятность", "kind": "main", "cpd": 0}, {"id": "thresh->status", "source": "thresh", "target": "status", "label": "выше порога", "kind": "main", "cpd": 0}, {"id": "status->output", "source": "status", "target": "output", "label": "", "kind": "main", "cpd": 0}, {"id": "output->confirm", "source": "output", "target": "confirm", "label": "кнопки", "kind": "main", "cpd": 0}, {"id": "prepared->cands", "source": "prepared", "target": "cands", "label": "индексы и карточки", "kind": "cfg", "cpd": 24}, {"id": "prepared->parse", "source": "prepared", "target": "parse", "label": "словарь синонимов карточек", "kind": "cfg", "cpd": -24}, {"id": "prepared->thresh", "source": "prepared", "target": "thresh", "label": "подсказка КСР при «не найдено»", "kind": "cfg", "cpd": -120}, {"id": "synonyms->parse", "source": "synonyms", "target": "parse", "label": "виды и сокращения", "kind": "cfg", "cpd": 0}, {"id": "rulesfile->rules", "source": "rulesfile", "target": "rules", "label": "правила", "kind": "cfg", "cpd": 0}, {"id": "specialist->synonyms", "source": "specialist", "target": "synonyms", "label": "правит", "kind": "norm", "cpd": 16}, {"id": "specialist->rulesfile", "source": "specialist", "target": "rulesfile", "label": "правит", "kind": "norm", "cpd": -16}, {"id": "confirm->feedback", "source": "confirm", "target": "feedback", "label": "вердикты", "kind": "main", "cpd": 16}, {"id": "feedback->output", "source": "feedback", "target": "output", "label": "подтверждённое наверх, отклонённое скрыто", "kind": "norm", "cpd": -30}, {"id": "feedback->synonyms", "source": "feedback", "target": "synonyms", "label": "кандидаты в словарь", "kind": "plan", "cpd": 14}, {"id": "feedback->evalset", "source": "feedback", "target": "evalset", "label": "растит контрольный набор", "kind": "plan", "cpd": 20}, {"id": "evalset->evalrun", "source": "evalset", "target": "evalrun", "label": "", "kind": "norm", "cpd": 14}, {"id": "evalrun->thresh", "source": "evalrun", "target": "thresh", "label": "порог по замеру", "kind": "cfg", "cpd": 40}, {"id": "kitsplit->qtype", "source": "kitsplit", "target": "qtype", "label": "", "kind": "plan", "cpd": -20}, {"id": "evalset->train", "source": "evalset", "target": "train", "label": "136 запросов настройки", "kind": "norm", "cpd": 16}, {"id": "train->decide", "source": "train", "target": "decide", "label": "веса и порог", "kind": "cfg", "cpd": -40}, {"id": "feedback->train", "source": "feedback", "target": "train", "label": "переобучение", "kind": "plan", "cpd": 30}, {"id": "guard->parse", "source": "guard", "target": "parse", "label": "диффы правок", "kind": "cfg", "cpd": -40}], "walk": ["query", "parse", "qtype", "cands", "fuse", "rerank", "rules", "decide", "thresh", "status", "output", "confirm"], "intro": "<p style='margin:0 0 8px'><b>Что это.</b> Путь одного запроса: разбор, три канала кандидатов, слияние, сверяющая модель, жёсткие правила специалиста, обученное решение, порог «не найдено», статус и объяснение. Нижняя полоса — то, что правит специалист, и как его подтверждения улучшают выдачу.</p><p style='margin:0 0 8px'><b>Главный путь</b> — толстые стрелки. «Пример по шагам» проводит запрос «кабель КВВГнг-LS 7*1.5» до выдачи.</p>"};</script>
+<script>
+(function () {
+  'use strict';
+  const D = window.SCHEME;
+  const ROLE_NAME = { code: 'код', model: 'модель', human: 'человек', store: 'хранилище', io: 'вход', ext: 'внешний сервис' };
+  const STATUS_NAME = { done: 'реализовано', plan: 'план, не реализовано', flag: 'по флагу, можно выключить' };
+
+  const fb = document.getElementById('fallback-list');
+  D.nodes.forEach(n => { const li = document.createElement('li');
+    li.textContent = n.title + ' [' + (ROLE_NAME[n.role] || n.role) + (n.status && n.status !== 'done' ? ', ' + STATUS_NAME[n.status] : '') + ']: ' + (n.what || ''); fb.appendChild(li); });
+
+  if (typeof cytoscape === 'undefined') {
+    document.getElementById('fallback').hidden = false;
+    document.querySelector('.stage').hidden = true;
+    document.querySelector('.controls').hidden = true;
+    return;
+  }
+
+  const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  const FONT = '"PT Sans", "Segoe UI", Arial, sans-serif';
+  function palette() { return {
+    bg: cssVar('--bg'), fg: cssVar('--fg'), muted: cssVar('--muted'), panel: cssVar('--panel'), accent: cssVar('--accent'),
+    code: cssVar('--code'), codeFill: cssVar('--code-fill'), model: cssVar('--model'), modelFill: cssVar('--model-fill'),
+    human: cssVar('--human'), humanFill: cssVar('--human-fill'), store: cssVar('--store'), storeFill: cssVar('--store-fill'),
+    ext: cssVar('--ext'), extFill: cssVar('--ext-fill'), edge: cssVar('--edge'), edgeCfg: cssVar('--edge-cfg'),
+    lane: cssVar('--lane'), laneBorder: cssVar('--lane-border') }; }
+
+  function buildStyle() {
+    const p = palette();
+    return [
+      { selector: 'node', style: {
+        'label': 'data(label)', 'text-wrap': 'wrap', 'text-max-width': 150, 'width': 168, 'height': 'label', 'padding': '10px',
+        'font-family': FONT, 'font-size': 13, 'line-height': 1.22, 'text-valign': 'center', 'text-halign': 'center',
+        'shape': 'round-rectangle', 'background-color': p.codeFill, 'border-width': 1.6, 'border-color': p.code, 'color': p.fg } },
+      { selector: 'node[role="io"]', style: { 'shape': 'round-tag', 'width': 176, 'text-max-width': 132 } },
+      { selector: 'node[role="model"]', style: { 'shape': 'hexagon', 'background-color': p.modelFill, 'border-color': p.model, 'width': 196, 'text-max-width': 132 } },
+      { selector: 'node[role="human"]', style: { 'shape': 'ellipse', 'background-color': p.humanFill, 'border-color': p.human, 'width': 196, 'text-max-width': 140, 'padding': '13px' } },
+      { selector: 'node[role="store"]', style: { 'shape': 'barrel', 'background-color': p.storeFill, 'border-color': p.store, 'padding': '12px' } },
+      { selector: 'node[role="ext"]', style: { 'shape': 'cut-rectangle', 'background-color': p.extFill, 'border-color': p.ext, 'width': 182, 'text-max-width': 150 } },
+      { selector: 'node[status="plan"]', style: { 'border-style': 'dashed', 'background-opacity': 0.35, 'color': p.muted } },
+      { selector: 'node[status="flag"]', style: { 'border-style': 'dashed', 'border-width': 2 } },
+      { selector: ':parent', style: {
+        'shape': 'round-rectangle', 'background-color': p.lane, 'background-opacity': 0.55, 'border-width': 1, 'border-color': p.laneBorder,
+        'padding': '26px', 'label': 'data(label)', 'text-valign': 'top', 'text-halign': 'center', 'text-margin-y': -6,
+        'font-family': FONT, 'font-size': 13, 'font-weight': 'bold', 'color': p.muted, 'text-wrap': 'none', 'events': 'no' } },
+      { selector: 'edge', style: {
+        'curve-style': 'unbundled-bezier', 'control-point-distances': e => e.data('cpd'), 'control-point-weights': 0.5,
+        'width': 2, 'line-color': p.edge, 'target-arrow-color': p.edge, 'target-arrow-shape': 'triangle', 'arrow-scale': 1.05,
+        'label': 'data(label)', 'font-family': FONT, 'font-size': 11, 'color': p.muted,
+        'text-background-color': p.panel, 'text-background-opacity': 1, 'text-background-padding': '3px', 'text-background-shape': 'round-rectangle',
+        'text-wrap': 'wrap', 'text-max-width': 120, 'text-rotation': 'none' } },
+      { selector: 'edge[kind="main"]', style: { 'width': 2.8 } },
+      { selector: 'edge[kind="plan"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [7, 5], 'width': 1.8 } },
+      { selector: 'edge[kind="cfg"]', style: { 'width': 1.4, 'line-color': p.edgeCfg, 'target-arrow-color': p.edgeCfg, 'line-style': 'dotted' } },
+      { selector: '.faded', style: { 'opacity': 0.14 } },
+      { selector: 'node.hl', style: { 'border-width': 3.2, 'border-color': p.accent } },
+      { selector: 'edge.hl', style: { 'line-color': p.accent, 'target-arrow-color': p.accent, 'width': 3, 'color': p.fg, 'opacity': 1 } },
+      { selector: '.gone', style: { 'display': 'none' } },
+    ];
+  }
+
+  const elements = [
+    ...D.parents.map(pn => ({ data: { id: pn.id, label: pn.label } })),
+    ...D.nodes.map(n => ({ data: { id: n.id, parent: n.parent, label: n.label, role: n.role, status: n.status || 'done' }, position: { x: n.x, y: n.y } })),
+    ...D.edges.map(e => ({ data: e })),
+  ];
+  const byId = Object.fromEntries(D.nodes.map(n => [n.id, n]));
+
+  const cy = cytoscape({
+    container: document.getElementById('cy'), elements, style: buildStyle(), layout: { name: 'preset' },
+    wheelSensitivity: 0.18, minZoom: 0.2, maxZoom: 3, boxSelectionEnabled: false, autounselectify: true,
+  });
+  cy.ready(() => cy.fit(undefined, 18));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => cy.style(buildStyle()));
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  if (mq.addEventListener) mq.addEventListener('change', () => cy.style(buildStyle()));
+
+  const panel = document.getElementById('panel');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const DT = { what: 'Что делает', why: 'Зачем нужен', bad: 'Что ловит плохо', tune: 'Чем настраивается',
+               files: 'Файлы и функции', par: 'Параметры и цифры', cmd: 'Команда', ex: 'Пример' };
+
+  function renderIntro() {
+    panel.innerHTML = '<h2>Как читать схему</h2>' + D.intro +
+      `<div class="legend">
+        <div class="it"><span class="sh code"></span> код</div>
+        <div class="it"><span class="sh model"></span> модель</div>
+        <div class="it"><span class="sh human"></span> человек</div>
+        <div class="it"><span class="sh store"></span> хранилище</div>
+        <div class="it"><span class="sh ext"></span> внешний сервис</div>
+        <div class="it"><span class="sh plan"></span> план, пунктир</div>
+        <div class="it"><span class="ln"></span> поток данных</div>
+        <div class="it"><span class="ln thin"></span> настройка, справочник</div>
+        <div class="it"><span class="ln dash"></span> план или флаг</div>
+        <div class="it"><b style="font-family:var(--mono)">гл. путь</b> — толстые стрелки</div>
+      </div>
+      <p class="hint">Кликните шаг — здесь откроется описание: что делает, зачем, что ловит плохо, чем настраивается, пример. Колёсико — масштаб, перетаскивание — сдвиг.</p>`;
+  }
+
+  function show(id) {
+    const n = byId[id]; if (!n) return;
+    let h = '<h2>' + esc(n.title) + '</h2><div class="badges">';
+    h += '<span class="badge role-' + n.role + '">' + (ROLE_NAME[n.role] || n.role) + '</span>';
+    if (n.status && n.status !== 'done') h += '<span class="badge ' + n.status + '">' + STATUS_NAME[n.status] + '</span>';
+    h += '</div>';
+    if (n.count) h += '<div class="count">' + esc(n.count) + '</div>';
+    h += '<dl>';
+    for (const k of ['what', 'why', 'bad', 'tune', 'files', 'par', 'cmd', 'ex']) {
+      if (!n[k]) continue;
+      const cls = k === 'ex' ? ' class="ex"' : (k === 'files' || k === 'cmd' ? ' class="mono"' : '');
+      h += '<dt>' + DT[k] + '</dt><dd' + cls + '>' + n[k] + '</dd>';
+    }
+    h += '</dl>';
+    panel.innerHTML = h;
+  }
+
+  cy.on('tap', 'node[role]', ev => {
+    cy.elements().removeClass('hl');
+    ev.target.addClass('hl');
+    show(ev.target.id());
+  });
+  cy.on('tap', ev => { if (ev.target === cy) { cy.elements().removeClass('hl faded'); walkIdx = -1; btnWalk.textContent = WALK_LABEL; renderIntro(); } });
+
+  // Подсветка ролей
+  let activeRole = null;
+  document.querySelectorAll('.chip[data-role]').forEach(ch => ch.addEventListener('click', () => {
+    const r = ch.dataset.role;
+    activeRole = activeRole === r ? null : r;
+    document.querySelectorAll('.chip[data-role]').forEach(c => c.setAttribute('aria-pressed', String(c.dataset.role === activeRole)));
+    cy.elements().removeClass('faded');
+    if (activeRole) {
+      const keep = cy.nodes('[role="' + activeRole + '"]');
+      cy.nodes('[role]').not(keep).addClass('faded');
+      cy.edges().not(keep.connectedEdges()).addClass('faded');
+    }
+  }));
+
+  // План и флаги
+  document.getElementById('show-plan').addEventListener('change', ev => {
+    const showPlan = ev.target.checked;
+    cy.batch(() => {
+      cy.nodes('[status="plan"]').toggleClass('gone', !showPlan);
+      cy.edges('[kind="plan"]').toggleClass('gone', !showPlan);
+      cy.edges().forEach(e => { if (e.source().hasClass('gone') || e.target().hasClass('gone')) e.addClass('gone'); else if (showPlan && e.data('kind') !== 'plan') e.removeClass('gone'); });
+    });
+  });
+
+  // Проход по шагам
+  const btnWalk = document.getElementById('btn-walk');
+  const WALK_LABEL = btnWalk.textContent;
+  let walkIdx = -1;
+  btnWalk.addEventListener('click', () => {
+    walkIdx += 1;
+    if (walkIdx >= D.walk.length) {
+      walkIdx = -1; cy.elements().removeClass('hl faded'); btnWalk.textContent = WALK_LABEL; renderIntro(); cy.fit(undefined, 18); return;
+    }
+    const id = D.walk[walkIdx];
+    cy.elements().removeClass('hl');
+    const node = cy.getElementById(id);
+    node.addClass('hl');
+    if (walkIdx > 0) {
+      const prev = D.walk[walkIdx - 1];
+      cy.edges('[source="' + prev + '"][target="' + id + '"]').addClass('hl');
+    }
+    cy.animate({ center: { eles: node }, duration: 240 });
+    show(id);
+    btnWalk.textContent = 'Шаг ' + (walkIdx + 1) + ' из ' + D.walk.length + ' ▸';
+  });
+
+  document.getElementById('btn-fit').addEventListener('click', () => cy.fit(undefined, 18));
+  document.getElementById('btn-reset').addEventListener('click', () => {
+    activeRole = null; walkIdx = -1; btnWalk.textContent = WALK_LABEL;
+    document.querySelectorAll('.chip[data-role]').forEach(c => c.setAttribute('aria-pressed', 'false'));
+    document.getElementById('show-plan').checked = true;
+    cy.elements().removeClass('hl faded gone'); cy.fit(undefined, 18); renderIntro();
+  });
+
+  renderIntro();
+})();
+</script>

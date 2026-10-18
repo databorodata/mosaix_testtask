@@ -1,0 +1,12 @@
+.venv
+.git
+.env
+**/__pycache__
+data/cache/search
+data/cache/cards
+data/cache/ksr_select
+data/cache/ksr_v43_positions.json
+data/cache/sheet_*.xlsx
+data/debug
+data/full/analysis
+data/feedback.jsonl

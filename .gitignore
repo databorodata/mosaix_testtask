@@ -1,0 +1,14 @@
+.env
+__pycache__/
+.venv/
+# кэши подготовки с чужими текстами и большие файлы — не публикуются
+data/cache/search/
+data/cache/cards/
+data/cache/ksr_select/
+data/cache/ksr_*.json
+data/cache/sheet_*.xlsx
+data/full/prep_all.jsonl
+data/full/analysis/
+data/debug/
+data/feedback/
+data/feedback.jsonl

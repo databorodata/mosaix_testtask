@@ -1,0 +1,308 @@
+<title>Подготовка базы к поиску</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Mono&display=swap">
+<style>
+  /* Layout: header, counts strip, controls, then [graph | panel]; cool neutral ground, five role hues. */
+  :root {
+    --bg: #f4f6f9; --fg: #1c2330; --muted: #5a6677; --panel: #ffffff; --line: #d6dce6; --accent: #d9541f;
+    --code: #3a6db4; --code-fill: #e2ecf9;
+    --model: #7a4fbf; --model-fill: #ece5f8;
+    --human: #c0711a; --human-fill: #fbecd8;
+    --store: #3f8a78; --store-fill: #dff0ea;
+    --ext: #b4475e; --ext-fill: #f9e4ea;
+    --edge: #8a93a2; --edge-cfg: #b3bac6; --lane: #e9edf3; --lane-border: #cfd6e0;
+    --font: "PT Sans", "Segoe UI", Arial, sans-serif; --mono: "PT Mono", "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141821; --fg: #e8ecf3; --muted: #9aa5b6; --panel: #1b212c; --line: #2c3442; --accent: #ff7a3d;
+      --code: #7ea7e8; --code-fill: #22314b; --model: #b596ec; --model-fill: #2e2648;
+      --human: #e8a45a; --human-fill: #41301c; --store: #7fc6b2; --store-fill: #1e3b35;
+      --ext: #f093a8; --ext-fill: #44232c; --edge: #7d8796; --edge-cfg: #58616f; --lane: #1a2029; --lane-border: #2f3845;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141821; --fg: #e8ecf3; --muted: #9aa5b6; --panel: #1b212c; --line: #2c3442; --accent: #ff7a3d;
+    --code: #7ea7e8; --code-fill: #22314b; --model: #b596ec; --model-fill: #2e2648;
+    --human: #e8a45a; --human-fill: #41301c; --store: #7fc6b2; --store-fill: #1e3b35;
+    --ext: #f093a8; --ext-fill: #44232c; --edge: #7d8796; --edge-cfg: #58616f; --lane: #1a2029; --lane-border: #2f3845;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 15px; line-height: 1.45; }
+  .wrap { padding-block: 18px 28px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 1760px; margin: 0 auto; }
+  header h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: .01em; text-wrap: balance; }
+  header p { margin: 0; color: var(--muted); max-width: 80ch; }
+  .chain { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin: 14px 0 10px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .chain b { color: var(--fg); font-weight: 400; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; white-space: nowrap; }
+  .chain span.arrow { opacity: .6; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0 12px; }
+  .controls .group { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .controls .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-right: 2px; }
+  button, .chip { font: inherit; font-size: 14px; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  button:hover, .chip:hover { border-color: var(--muted); }
+  button:focus-visible, .chip:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chip[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .chip .sw { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; border: 1.5px solid; }
+  .chip[data-role="code"] .sw { background: var(--code-fill); border-color: var(--code); }
+  .chip[data-role="model"] .sw { background: var(--model-fill); border-color: var(--model); clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); border-radius: 0; }
+  .chip[data-role="human"] .sw { background: var(--human-fill); border-color: var(--human); border-radius: 50%; }
+  .chip[data-role="store"] .sw { background: var(--store-fill); border-color: var(--store); border-radius: 2px 2px 6px 6px; }
+  .chip[data-role="ext"] .sw { background: var(--ext-fill); border-color: var(--ext); clip-path: polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%); border-radius: 0; }
+  label.check { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; cursor: pointer; }
+  .stage { display: grid; grid-template-columns: minmax(0, 1fr) 350px; gap: 14px; align-items: start; }
+  #cy { width: 100%; height: 80vh; min-height: 480px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; max-height: 80vh; overflow: auto; min-width: 0; }
+  .panel h2 { font-size: 19px; margin: 0 0 8px; line-height: 1.25; text-wrap: balance; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .badge.role-code { border-color: var(--code); color: var(--code); }
+  .badge.role-model { border-color: var(--model); color: var(--model); }
+  .badge.role-human { border-color: var(--human); color: var(--human); }
+  .badge.role-store { border-color: var(--store); color: var(--store); }
+  .badge.role-ext { border-color: var(--ext); color: var(--ext); }
+  .badge.role-io { border-color: var(--code); color: var(--code); }
+  .badge.plan, .badge.flag { border-style: dashed; }
+  .count { font-family: var(--mono); font-size: 13px; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; margin: 6px 0 12px; }
+  .panel dl { margin: 0; }
+  .panel dt { font-size: 11.5px; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin-top: 10px; }
+  .panel dd { margin: 2px 0 0; font-size: 14.5px; }
+  .panel dd.ex { background: var(--bg); border-left: 3px solid var(--accent); padding: 6px 10px; border-radius: 0 8px 8px 0; }
+  .panel dd.mono { font-family: var(--mono); font-size: 12.5px; }
+  .legend { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; font-size: 13.5px; margin-top: 10px; }
+  .legend .it { display: flex; align-items: center; gap: 8px; }
+  .legend .ln { width: 34px; height: 0; border-top: 2.5px solid var(--edge); flex: none; }
+  .legend .ln.dash { border-top-style: dashed; }
+  .legend .ln.thin { border-top-width: 1.5px; border-top-color: var(--edge-cfg); border-top-style: dotted; }
+  .legend .sh { width: 22px; height: 16px; border: 1.5px solid; flex: none; }
+  .legend .sh.code { border-color: var(--code); background: var(--code-fill); border-radius: 4px; }
+  .legend .sh.model { border-color: var(--model); background: var(--model-fill); clip-path: polygon(20% 0,80% 0,100% 50%,80% 100%,20% 100%,0 50%); }
+  .legend .sh.human { border-color: var(--human); background: var(--human-fill); border-radius: 50%; }
+  .legend .sh.store { border-color: var(--store); background: var(--store-fill); border-radius: 3px 3px 8px 8px; }
+  .legend .sh.ext { border-color: var(--ext); background: var(--ext-fill); clip-path: polygon(20% 0,80% 0,100% 25%,100% 75%,80% 100%,20% 100%,0 75%,0 25%); }
+  .legend .sh.plan { border-style: dashed; border-color: var(--muted); background: transparent; border-radius: 4px; }
+  #fallback { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+  #fallback ol { padding-left: 20px; }
+  .hint { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  @media (max-width: 900px) {
+    .stage { grid-template-columns: 1fr; }
+    #cy { height: 60vh; min-height: 420px; }
+    .panel { max-height: none; }
+    header h1 { font-size: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<div class="wrap">
+  <header>
+    <h1>Подготовка базы к поиску</h1>
+    <p>Что делается со всей базой заранее, один раз. Кликните шаг — справа описание: что делает, зачем, что ловит плохо, чем настраивается, пример. Колёсико — масштаб, перетаскивание — сдвиг.</p>
+  </header>
+  <div class="chain" aria-label="Сколько строк и кандидатов остаётся после шагов"><b>база 2 381</b><span class="arrow">→</span><b>веб-поиск: до 10 документов на строку</b><span class="arrow">→</span><b>карточек 2 381</b><span class="arrow">→</span><b>проверка кодом</b><span class="arrow">→</span><b>КСР: код · группа · нет</b><span class="arrow">→</span><b>векторы 4 × 2 381</b><span class="arrow">→</span><b>в репозиторий: 9,8 + 14 МБ</b></div>
+  <div class="controls">
+    <div class="group" role="group" aria-label="Подсветить роль">
+      <span class="lbl">Роль</span>
+      <button class="chip" data-role="code" aria-pressed="false"><span class="sw"></span>код</button>
+      <button class="chip" data-role="model" aria-pressed="false"><span class="sw"></span>модель</button>
+      <button class="chip" data-role="human" aria-pressed="false"><span class="sw"></span>человек</button>
+      <button class="chip" data-role="store" aria-pressed="false"><span class="sw"></span>хранилище</button>
+      <button class="chip" data-role="ext" aria-pressed="false"><span class="sw"></span>внешний сервис</button>
+    </div>
+    <div class="group">
+      <label class="check"><input type="checkbox" id="show-plan" checked> показывать план</label>
+      <button id="btn-walk">Пример по шагам ▸</button>
+      <button id="btn-fit">Вписать</button>
+      <button id="btn-reset">Сброс</button>
+    </div>
+  </div>
+  <div class="stage">
+    <div id="cy" role="img" aria-label="Схема подготовки базы: очистка, тип строки, веб-поиск описаний, карточка моделью, проверка кодом, привязка к КСР, векторы, готовая база в репозитории"></div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+  <div id="fallback" hidden>
+    <p>Библиотека схемы не загрузилась. Шаги списком:</p>
+    <ol id="fallback-list"></ol>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<script>window.SCHEME = {"parents": [{"id": "src", "label": "ВХОДЫ · база и справочник"}, {"id": "pipe", "label": "ПОДГОТОВКА · один раз на всю базу, заранее: 77 минут, 2 612 ₽"}, {"id": "out", "label": "РЕЗУЛЬТАТ"}], "nodes": [{"id": "xlsx", "parent": "src", "role": "store", "x": 70, "y": -50, "label": "База позиций, xlsx\n2 381 строка", "title": "База позиций", "count": "2 381 строка: наименование как есть и условная цена", "what": "История закупок заказчика. Цена условная и в отборе не участвует. Одна и та же вещь записана по-разному, рядом с материалами лежат услуги, комплекты и надбавки.", "why": "Среди этих строк ищем аналоги.", "bad": "Нет единиц измерения и категорий; в кодах перемешаны латиница и кириллица; есть заголовки комплектов без состава.", "tune": "Путь к файлу, лист, колонки.", "ex": "#57 «Кабель контрольный КВВГнг(A)-LS 5х1,5» · #137 «Погрузка… (Кабель ОКГТ-ц…)» · #517 «Шкаф оборудования электропитания (резервный) в составе:» · #747 «Доплата к цене на сталь марки С345 -3%»"}, {"id": "clean", "parent": "pipe", "role": "code", "x": 290, "y": 70, "label": "Очистка строки", "title": "Очистка строки", "count": "2 381 строка, без потерь", "what": "Номера пунктов в начале, лишние пробелы, «ё», кавычки, одинаковые на вид латинские и русские буквы в кодах. Исходная строка хранится рядом.", "why": "Запрос и база должны чиститься одинаково — иначе «КВВГнг(А)» с русской А и «КВВГнг(A)» с латинской не встретятся.", "bad": "Опечатки в словах не исправляет.", "tune": "Правила замен в одном модуле; тот же модуль чистит запрос.", "ex": "«1.7.2) Кабель…» → «Кабель…»; КВВГнг(А) = КВВГнг(A)."}, {"id": "nametype", "parent": "pipe", "role": "code", "x": 510, "y": 70, "label": "Тип строки\nуслуга · комплект · марка…", "title": "Тип строки", "count": "марка по ГОСТ 245 · типовое 103 · артикул 1 192 · описание 695 · услуга 92 · комплект 54 · надбавки 10", "what": "Правила решают, что это за строка: марка по ГОСТ, типовое обозначение, артикул производителя, описание, услуга, комплект «в составе», надбавка.", "why": "Услуги и надбавки не должны всплывать на запрос о материале, а тип подсказывает модели, как писать карточку.", "bad": "На ручной проверке 120 строк тип совпал в 88: путает «марку по ГОСТ» с «артикулом» — на поиск не влияет, влияет на подсказку модели.", "tune": "Словарь брендов, шаблоны обозначений, маркеры услуг.", "ex": "«Погрузка при автомобильных перевозках…» → услуга; «Шкаф… в составе:» → комплект."}, {"id": "yandex", "parent": "pipe", "role": "ext", "x": 730, "y": 70, "label": "Yandex Search API\n10 документов, пассажи", "title": "Поиск открытых описаний", "count": "до 10 документов с фрагментами на строку; ошибок поиска в полном прогоне 0", "what": "Запрос — очищенное наименование, без цены. Забираем заголовки, домены и пассажи: даже закрытые для роботов каталоги отдают пассажи.", "why": "В смете нет описаний, а пользователь пишет другими словами. Каталоги дают те самые «другие слова» и характеристики.", "bad": "На первом месте бывает соседний артикул; у строк без марки приходит категорийный шум. Наружу уходит только наименование — в настоящих ведомостях названия объектов нужно вырезать до отправки.", "tune": "Параметры запроса, кэш по очищенному названию: повторный прогон бесплатный.", "ex": "«огнетушитель ОП-5» → пассажи: «порошковый, масса заряда 5 кг, классы пожара АВСЕ»."}, {"id": "filter", "parent": "pipe", "role": "code", "x": 950, "y": 70, "label": "Фильтр фрагментов", "title": "Фильтр фрагментов", "count": "остаются фрагменты про саму вещь", "what": "Выбрасывает страницы про соседний артикул (код в заголовке не совпал) и торговые фразы: «купить», «цена», «в наличии».", "why": "Иначе модель перепишет в карточку чужие характеристики из размерного ряда.", "bad": "У строки без кода и чисел остаются общие фрагменты о категории — карточка выходит общей.", "tune": "Список торговых фраз, правило сравнения кодов."}, {"id": "card", "parent": "pipe", "role": "model", "x": 1170, "y": 70, "label": "Карточка позиции\nQwen3.6-35B-A3B", "title": "Карточка позиции", "count": "2 331 вызов · 939,87 ₽ (~0,40 ₽ на строку) · качество по ручной разметке: ок 21 %, частично 68 %, ошибка 5 %, мало данных 6 %", "what": "Модель пишет карточку по строгой форме: каноническое название, описание, 5–10 синонимов, характеристики «ключ: значение». Правило промпта: только факты из строки и отобранных фрагментов.", "why": "Карточка даёт слова и характеристики, которых нет в строке, — за счёт них находятся перефразированные запросы. Это единственное место, где большая модель что-то пишет.", "bad": "В 34 % карточек просочились детали конкретного продавца (vendor_leak); полная картина дефектов — docs/report-full-run.md.", "tune": "Промпт и схема с версией; модель меняется параметром.", "ex": "#57 → каноническое «Кабель контрольный КВВГнг(А)-LS 5х1,5», синонимы «КВВГ нг ЛС 5*1.5»…, характеристики: жил 5, сечение 1,5 мм², медь, LS."}, {"id": "verify", "parent": "pipe", "role": "code", "x": 1390, "y": 70, "label": "Проверка карточки", "title": "Проверка карточки кодом", "count": "непрошедшие помечаются и используются с осторожностью", "what": "Числа и марки из строки должны встретиться в карточке, а числа карточки — во входе (строка + фрагменты).", "why": "Тихая ошибка в числе — самая дорогая: неверное сечение попало бы в выдачу как «совпало».", "bad": "Выдуманный материал без числа этой проверкой не ловится — его ловила ручная разметка.", "tune": "Правила сверки в коде.", "ex": "#397 «Аппаратуры ВЧ связи 12 канальная»: модель вписала 200, 300, 600 — таких чисел нет во входе → пометка fail."}, {"id": "ksrbind", "parent": "pipe", "role": "model", "x": 1610, "y": 70, "label": "Привязка к КСР\nкод · группа · нет", "title": "Привязка к справочнику КСР", "count": "КСР v43: 90 912 позиций; выбор моделью ~0,20 ₽ на строку", "what": "Код отбирает 10 кандидатов из классификатора Минстроя, модель выбирает: «тот же ресурс», «только группа», «нет». Правило кодом понижает «код» до «группы», если числа ресурса не подтверждены.", "why": "Ключ сущности без привязки к заводу. В поиске кандидатов не участвует — замер не показал пользы (0 новых попаданий), — а работает подсказкой при «не найдено» и заготовкой под смену справочника.", "bad": "Оборудование привязывается только до типа; «группа» по общему слову даёт ложные совпадения.", "tune": "Число кандидатов, правило понижения.", "ex": "«огнетушитель ОП-5» → при «не найдено» подсказка: в КСР есть «Огнетушитель порошковый ОП-5, масса заряда 3,7 кг»."}, {"id": "ksrfile", "parent": "src", "role": "store", "x": 1610, "y": -50, "label": "КСР, версия 43\n90 912 позиций", "title": "Классификатор строительных ресурсов", "count": "код, наименование, единица, группа", "what": "Справочник Минстроя с ФГИС ЦС. По правилам ведения не содержит производителей — только сущности.", "why": "Общий язык между закупками разных лет и поставщиков.", "bad": "Около трети позиций в «прочих»; версии выходят ежеквартально.", "tune": "Файл версии в репозитории."}, {"id": "qa", "parent": "pipe", "role": "human", "x": 1170, "y": 240, "label": "Ручная разметка качества\nвсе 2 381 карточка", "title": "Ручная разметка качества", "count": "вердикты: ок 21 % · частично 68 % · ошибка 5 % · мало данных 6 %; выборочная перепроверка — согласие 13 из 14", "what": "Каждую карточку прочитали и разметили по инструкции: про ту ли вещь, верны ли числа, чисты ли синонимы, нет ли чужих деталей.", "why": "Это замер качества подготовки: отсюда цифры дефектов и список починок.", "bad": "Строгость читающих разная; разметка для замера, в сам поиск она не идёт.", "tune": "Инструкция разметки и теги дефектов."}, {"id": "embed", "parent": "pipe", "role": "code", "x": 1390, "y": 240, "label": "Векторы смысла\n4 поля на строку", "title": "Векторы смысла", "count": "4 × 2 381 векторов; индекс 14 МБ; пересборка ~6 мин на CPU", "what": "Локальная модель переводит четыре текста строки — наименование, каноническое название, синонимы, описание — в числовые отпечатки. Похожий смысл → близкие числа при разных словах.", "why": "Ловит перефразировки, которые не совпадают по словам: «стяжка нейлоновая» ≈ «хомут кабельный».", "bad": "Числа и марки различает плохо — их решают разбор характеристик и правила.", "tune": "Модель меняется параметром; альтернатива подключена, не замерена."}, {"id": "prepared", "parent": "out", "role": "store", "x": 1610, "y": 400, "label": "Готовая база поиска\nв репозитории", "title": "Готовая база поиска", "count": "карточки и КСР 9,8 МБ · векторы 14 МБ · модель решения · снимок разбора", "what": "Всё, что нужно поиску, лежит в репозитории: проверяющий запускает docker compose up без ключей и без прогонов. Чужие тексты веб-выдачи в публикацию не идут.", "why": "Воспроизводимость: поиск работает на чистой машине без внешних вызовов.", "bad": "Смена промпта или версии КСР требует пересборки подготовки.", "tune": "Одна команда дозапуска на новые строки.", "ex": "Полный прогон: 77 минут, 2 612 ₽ (1,10 ₽ на строку); 8 строк со сбоями добраны повторным прогоном за 5,28 ₽."}, {"id": "objcut", "parent": "pipe", "role": "code", "status": "plan", "x": 730, "y": -50, "label": "Вырезать названия объектов\nдля настоящих ведомостей", "title": "Вырезание названий объектов (план)", "what": "Перед отправкой в веб-поиск вырезать из строки названия подстанций, линий и объектов.", "why": "В этой базе имена уже обезличены заказчиком; в настоящих ведомостях этого делать нельзя без чистки.", "bad": "—", "tune": "Словарь стоп-имён."}], "edges": [{"id": "xlsx->clean", "source": "xlsx", "target": "clean", "label": "", "kind": "main", "cpd": 24}, {"id": "clean->nametype", "source": "clean", "target": "nametype", "label": "", "kind": "main", "cpd": 0}, {"id": "nametype->yandex", "source": "nametype", "target": "yandex", "label": "", "kind": "main", "cpd": 0}, {"id": "yandex->filter", "source": "yandex", "target": "filter", "label": "", "kind": "main", "cpd": 0}, {"id": "filter->card", "source": "filter", "target": "card", "label": "", "kind": "main", "cpd": 0}, {"id": "card->verify", "source": "card", "target": "verify", "label": "", "kind": "main", "cpd": 0}, {"id": "verify->ksrbind", "source": "verify", "target": "ksrbind", "label": "", "kind": "main", "cpd": 0}, {"id": "nametype->card", "source": "nametype", "target": "card", "label": "подсказка типа", "kind": "cfg", "cpd": 56}, {"id": "ksrfile->ksrbind", "source": "ksrfile", "target": "ksrbind", "label": "90 912 позиций", "kind": "cfg", "cpd": 0}, {"id": "card->qa", "source": "card", "target": "qa", "label": "все карточки", "kind": "norm", "cpd": 20}, {"id": "qa->card", "source": "qa", "target": "card", "label": "правки промпта и фильтра", "kind": "cfg", "cpd": 20}, {"id": "card->embed", "source": "card", "target": "embed", "label": "4 текста", "kind": "norm", "cpd": 26}, {"id": "verify->prepared", "source": "verify", "target": "prepared", "label": "карточки с пометками", "kind": "norm", "cpd": 30}, {"id": "ksrbind->prepared", "source": "ksrbind", "target": "prepared", "label": "слой подсказки", "kind": "norm", "cpd": 16}, {"id": "embed->prepared", "source": "embed", "target": "prepared", "label": "векторы", "kind": "norm", "cpd": 14}, {"id": "objcut->yandex", "source": "objcut", "target": "yandex", "label": "", "kind": "plan", "cpd": 0}], "walk": ["xlsx", "clean", "nametype", "yandex", "filter", "card", "verify", "ksrbind", "embed", "prepared"], "intro": "<p style='margin:0 0 8px'><b>Что это.</b> Вся база проходит подготовку заранее и один раз: тип строки, открытые описания из веб-поиска, карточка от модели, проверка кодом, привязка к справочнику КСР, векторы смысла. Готовая база лежит в репозитории — при запросе внешних вызовов нет.</p><p style='margin:0 0 8px'><b>Главный путь</b> — толстые стрелки слева направо. Пунктир — план. Жёлтая кнопка «Пример по шагам» проводит строку №57 «Кабель контрольный КВВГнг(A)-LS 5х1,5» через все шаги.</p>"};</script>
+<script>
+(function () {
+  'use strict';
+  const D = window.SCHEME;
+  const ROLE_NAME = { code: 'код', model: 'модель', human: 'человек', store: 'хранилище', io: 'вход', ext: 'внешний сервис' };
+  const STATUS_NAME = { done: 'реализовано', plan: 'план, не реализовано', flag: 'по флагу, можно выключить' };
+
+  const fb = document.getElementById('fallback-list');
+  D.nodes.forEach(n => { const li = document.createElement('li');
+    li.textContent = n.title + ' [' + (ROLE_NAME[n.role] || n.role) + (n.status && n.status !== 'done' ? ', ' + STATUS_NAME[n.status] : '') + ']: ' + (n.what || ''); fb.appendChild(li); });
+
+  if (typeof cytoscape === 'undefined') {
+    document.getElementById('fallback').hidden = false;
+    document.querySelector('.stage').hidden = true;
+    document.querySelector('.controls').hidden = true;
+    return;
+  }
+
+  const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  const FONT = '"PT Sans", "Segoe UI", Arial, sans-serif';
+  function palette() { return {
+    bg: cssVar('--bg'), fg: cssVar('--fg'), muted: cssVar('--muted'), panel: cssVar('--panel'), accent: cssVar('--accent'),
+    code: cssVar('--code'), codeFill: cssVar('--code-fill'), model: cssVar('--model'), modelFill: cssVar('--model-fill'),
+    human: cssVar('--human'), humanFill: cssVar('--human-fill'), store: cssVar('--store'), storeFill: cssVar('--store-fill'),
+    ext: cssVar('--ext'), extFill: cssVar('--ext-fill'), edge: cssVar('--edge'), edgeCfg: cssVar('--edge-cfg'),
+    lane: cssVar('--lane'), laneBorder: cssVar('--lane-border') }; }
+
+  function buildStyle() {
+    const p = palette();
+    return [
+      { selector: 'node', style: {
+        'label': 'data(label)', 'text-wrap': 'wrap', 'text-max-width': 150, 'width': 168, 'height': 'label', 'padding': '10px',
+        'font-family': FONT, 'font-size': 13, 'line-height': 1.22, 'text-valign': 'center', 'text-halign': 'center',
+        'shape': 'round-rectangle', 'background-color': p.codeFill, 'border-width': 1.6, 'border-color': p.code, 'color': p.fg } },
+      { selector: 'node[role="io"]', style: { 'shape': 'round-tag', 'width': 176, 'text-max-width': 132 } },
+      { selector: 'node[role="model"]', style: { 'shape': 'hexagon', 'background-color': p.modelFill, 'border-color': p.model, 'width': 196, 'text-max-width': 132 } },
+      { selector: 'node[role="human"]', style: { 'shape': 'ellipse', 'background-color': p.humanFill, 'border-color': p.human, 'width': 196, 'text-max-width': 140, 'padding': '13px' } },
+      { selector: 'node[role="store"]', style: { 'shape': 'barrel', 'background-color': p.storeFill, 'border-color': p.store, 'padding': '12px' } },
+      { selector: 'node[role="ext"]', style: { 'shape': 'cut-rectangle', 'background-color': p.extFill, 'border-color': p.ext, 'width': 182, 'text-max-width': 150 } },
+      { selector: 'node[status="plan"]', style: { 'border-style': 'dashed', 'background-opacity': 0.35, 'color': p.muted } },
+      { selector: 'node[status="flag"]', style: { 'border-style': 'dashed', 'border-width': 2 } },
+      { selector: ':parent', style: {
+        'shape': 'round-rectangle', 'background-color': p.lane, 'background-opacity': 0.55, 'border-width': 1, 'border-color': p.laneBorder,
+        'padding': '26px', 'label': 'data(label)', 'text-valign': 'top', 'text-halign': 'center', 'text-margin-y': -6,
+        'font-family': FONT, 'font-size': 13, 'font-weight': 'bold', 'color': p.muted, 'text-wrap': 'none', 'events': 'no' } },
+      { selector: 'edge', style: {
+        'curve-style': 'unbundled-bezier', 'control-point-distances': e => e.data('cpd'), 'control-point-weights': 0.5,
+        'width': 2, 'line-color': p.edge, 'target-arrow-color': p.edge, 'target-arrow-shape': 'triangle', 'arrow-scale': 1.05,
+        'label': 'data(label)', 'font-family': FONT, 'font-size': 11, 'color': p.muted,
+        'text-background-color': p.panel, 'text-background-opacity': 1, 'text-background-padding': '3px', 'text-background-shape': 'round-rectangle',
+        'text-wrap': 'wrap', 'text-max-width': 120, 'text-rotation': 'none' } },
+      { selector: 'edge[kind="main"]', style: { 'width': 2.8 } },
+      { selector: 'edge[kind="plan"]', style: { 'line-style': 'dashed', 'line-dash-pattern': [7, 5], 'width': 1.8 } },
+      { selector: 'edge[kind="cfg"]', style: { 'width': 1.4, 'line-color': p.edgeCfg, 'target-arrow-color': p.edgeCfg, 'line-style': 'dotted' } },
+      { selector: '.faded', style: { 'opacity': 0.14 } },
+      { selector: 'node.hl', style: { 'border-width': 3.2, 'border-color': p.accent } },
+      { selector: 'edge.hl', style: { 'line-color': p.accent, 'target-arrow-color': p.accent, 'width': 3, 'color': p.fg, 'opacity': 1 } },
+      { selector: '.gone', style: { 'display': 'none' } },
+    ];
+  }
+
+  const elements = [
+    ...D.parents.map(pn => ({ data: { id: pn.id, label: pn.label } })),
+    ...D.nodes.map(n => ({ data: { id: n.id, parent: n.parent, label: n.label, role: n.role, status: n.status || 'done' }, position: { x: n.x, y: n.y } })),
+    ...D.edges.map(e => ({ data: e })),
+  ];
+  const byId = Object.fromEntries(D.nodes.map(n => [n.id, n]));
+
+  const cy = cytoscape({
+    container: document.getElementById('cy'), elements, style: buildStyle(), layout: { name: 'preset' },
+    wheelSensitivity: 0.18, minZoom: 0.2, maxZoom: 3, boxSelectionEnabled: false, autounselectify: true,
+  });
+  cy.ready(() => cy.fit(undefined, 18));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => cy.style(buildStyle()));
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  if (mq.addEventListener) mq.addEventListener('change', () => cy.style(buildStyle()));
+
+  const panel = document.getElementById('panel');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const DT = { what: 'Что делает', why: 'Зачем нужен', bad: 'Что ловит плохо', tune: 'Чем настраивается',
+               files: 'Файлы и функции', par: 'Параметры и цифры', cmd: 'Команда', ex: 'Пример' };
+
+  function renderIntro() {
+    panel.innerHTML = '<h2>Как читать схему</h2>' + D.intro +
+      `<div class="legend">
+        <div class="it"><span class="sh code"></span> код</div>
+        <div class="it"><span class="sh model"></span> модель</div>
+        <div class="it"><span class="sh human"></span> человек</div>
+        <div class="it"><span class="sh store"></span> хранилище</div>
+        <div class="it"><span class="sh ext"></span> внешний сервис</div>
+        <div class="it"><span class="sh plan"></span> план, пунктир</div>
+        <div class="it"><span class="ln"></span> поток данных</div>
+        <div class="it"><span class="ln thin"></span> настройка, справочник</div>
+        <div class="it"><span class="ln dash"></span> план или флаг</div>
+        <div class="it"><b style="font-family:var(--mono)">гл. путь</b> — толстые стрелки</div>
+      </div>
+      <p class="hint">Кликните шаг — здесь откроется описание: что делает, зачем, что ловит плохо, чем настраивается, пример. Колёсико — масштаб, перетаскивание — сдвиг.</p>`;
+  }
+
+  function show(id) {
+    const n = byId[id]; if (!n) return;
+    let h = '<h2>' + esc(n.title) + '</h2><div class="badges">';
+    h += '<span class="badge role-' + n.role + '">' + (ROLE_NAME[n.role] || n.role) + '</span>';
+    if (n.status && n.status !== 'done') h += '<span class="badge ' + n.status + '">' + STATUS_NAME[n.status] + '</span>';
+    h += '</div>';
+    if (n.count) h += '<div class="count">' + esc(n.count) + '</div>';
+    h += '<dl>';
+    for (const k of ['what', 'why', 'bad', 'tune', 'files', 'par', 'cmd', 'ex']) {
+      if (!n[k]) continue;
+      const cls = k === 'ex' ? ' class="ex"' : (k === 'files' || k === 'cmd' ? ' class="mono"' : '');
+      h += '<dt>' + DT[k] + '</dt><dd' + cls + '>' + n[k] + '</dd>';
+    }
+    h += '</dl>';
+    panel.innerHTML = h;
+  }
+
+  cy.on('tap', 'node[role]', ev => {
+    cy.elements().removeClass('hl');
+    ev.target.addClass('hl');
+    show(ev.target.id());
+  });
+  cy.on('tap', ev => { if (ev.target === cy) { cy.elements().removeClass('hl faded'); walkIdx = -1; btnWalk.textContent = WALK_LABEL; renderIntro(); } });
+
+  // Подсветка ролей
+  let activeRole = null;
+  document.querySelectorAll('.chip[data-role]').forEach(ch => ch.addEventListener('click', () => {
+    const r = ch.dataset.role;
+    activeRole = activeRole === r ? null : r;
+    document.querySelectorAll('.chip[data-role]').forEach(c => c.setAttribute('aria-pressed', String(c.dataset.role === activeRole)));
+    cy.elements().removeClass('faded');
+    if (activeRole) {
+      const keep = cy.nodes('[role="' + activeRole + '"]');
+      cy.nodes('[role]').not(keep).addClass('faded');
+      cy.edges().not(keep.connectedEdges()).addClass('faded');
+    }
+  }));
+
+  // План и флаги
+  document.getElementById('show-plan').addEventListener('change', ev => {
+    const showPlan = ev.target.checked;
+    cy.batch(() => {
+      cy.nodes('[status="plan"]').toggleClass('gone', !showPlan);
+      cy.edges('[kind="plan"]').toggleClass('gone', !showPlan);
+      cy.edges().forEach(e => { if (e.source().hasClass('gone') || e.target().hasClass('gone')) e.addClass('gone'); else if (showPlan && e.data('kind') !== 'plan') e.removeClass('gone'); });
+    });
+  });
+
+  // Проход по шагам
+  const btnWalk = document.getElementById('btn-walk');
+  const WALK_LABEL = btnWalk.textContent;
+  let walkIdx = -1;
+  btnWalk.addEventListener('click', () => {
+    walkIdx += 1;
+    if (walkIdx >= D.walk.length) {
+      walkIdx = -1; cy.elements().removeClass('hl faded'); btnWalk.textContent = WALK_LABEL; renderIntro(); cy.fit(undefined, 18); return;
+    }
+    const id = D.walk[walkIdx];
+    cy.elements().removeClass('hl');
+    const node = cy.getElementById(id);
+    node.addClass('hl');
+    if (walkIdx > 0) {
+      const prev = D.walk[walkIdx - 1];
+      cy.edges('[source="' + prev + '"][target="' + id + '"]').addClass('hl');
+    }
+    cy.animate({ center: { eles: node }, duration: 240 });
+    show(id);
+    btnWalk.textContent = 'Шаг ' + (walkIdx + 1) + ' из ' + D.walk.length + ' ▸';
+  });
+
+  document.getElementById('btn-fit').addEventListener('click', () => cy.fit(undefined, 18));
+  document.getElementById('btn-reset').addEventListener('click', () => {
+    activeRole = null; walkIdx = -1; btnWalk.textContent = WALK_LABEL;
+    document.querySelectorAll('.chip[data-role]').forEach(c => c.setAttribute('aria-pressed', 'false'));
+    document.getElementById('show-plan').checked = true;
+    cy.elements().removeClass('hl faded gone'); cy.fit(undefined, 18); renderIntro();
+  });
+
+  renderIntro();
+})();
+</script>

@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - feedback:/app/data/feedback
+    environment:
+      - OMP_NUM_THREADS=4
+
+volumes:
+  feedback:

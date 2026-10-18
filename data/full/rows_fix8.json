@@ -1,0 +1,66 @@
+[
+ {
+  "row": 2,
+  "idx": 0,
+  "name": "Желоб водоприемный МП \"Модерн\"",
+  "price": 910,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 53,
+  "idx": 51,
+  "name": "Щит автоматизации LND-CAP-4171-АП1",
+  "price": 240000,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 100,
+  "idx": 98,
+  "name": "Кабель силовой с медными жилами ВВГнг(A)-LS 5х6-660",
+  "price": 30,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 397,
+  "idx": 395,
+  "name": "Аппаратуры ВЧ связи 12 канальная",
+  "price": 1200000,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 463,
+  "idx": 461,
+  "name": "Извещатель охранный поверхностный, звуковой, тип \"Свирель\"",
+  "price": 40,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 828,
+  "idx": 826,
+  "name": "Никелированная пластина для заземления PTCE",
+  "price": 380,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 829,
+  "idx": 827,
+  "name": "Типовой шкаф ШПДС 0-0-6-ХХХХ",
+  "price": 2600000,
+  "label": null,
+  "anchor": false
+ },
+ {
+  "row": 1581,
+  "idx": 1579,
+  "name": "Приемо-передатчик ВЧ защит",
+  "price": 230000,
+  "label": null,
+  "anchor": false
+ }
+]
