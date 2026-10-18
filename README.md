@@ -16,7 +16,7 @@ docker compose up --build
 
 Готовые данные подготовки лежат в репозитории — ключи не нужны. Повторить подготовку с нуля:
 `python -m scripts.run_prep --rows data/full/rows_all.json --out data/full/prep_all.jsonl`
-с ключами Yandex Cloud в `.env` (прошлый прогон: 77 минут, 2 612 ₽). Замер качества:
+с ключами Yandex Cloud в `.env` (прошлый прогон занял 77 минут). Замер качества:
 `python -m scripts.eval_search --set eval/final_set.json --out eval/final`. Тесты: `pytest`.
 Обучение решения: `python -m scripts.train_decision`.
 
